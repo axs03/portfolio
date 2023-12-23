@@ -1,3 +1,27 @@
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #77a9f8 #ffffff00;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background: rgba(8, 18, 48, 0.863);
+    backdrop-filter: blur(2px);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #77a9f8;
+    border-radius: 10px;
+    border: 3px solid #fafafa;
+}
+/* scrollbar made with https://codepen.io/stephenpaton-tech/full/JjRvGmY */
+
+
 .welcome{
     font-family:Arial, Helvetica, sans-serif;
     text-align: center;
@@ -33,18 +57,23 @@
     backdrop-filter: blur(2px);
 }
 
+.info-container p{
+    color: white;
+}
+
 .box{
     margin: 50px;
     width: calc(50% - 10px);
     background-color: rgba(26, 26, 26, 0.61);
     color: #ffffff;
     border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.87);
     text-align: left;
     line-height: 35px;
     width: auto;
     height: auto;
     padding: 10px;
-    max-width: 500px;
+    max-width: 750px;
 }
 
 .box button {
@@ -55,23 +84,22 @@
     box-sizing: border-box;
     color: #39739d;
     cursor: pointer;
-    display: inline-block;
-    /* font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif; */
-    font-family:'Courier New', Courier, monospace;
+    display: flexbox;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 19px;
     font-weight: 400;
     line-height: 1.15385;
-    margin: auto;
     outline: none;
     padding: 10px;
-    position: relative;
     text-align: center;
     text-decoration: none;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    vertical-align: baseline;
     white-space: nowrap;
+    margin: auto;
+    position: relative;
+    vertical-align: baseline;
 }
 
 .box button:hover,
@@ -100,15 +128,18 @@ body {
 
 .contact-section {
     text-align: center;
-    padding: 20px;
-    border-radius: 10px;
+    /* padding: 20px; */
+    padding-top: 20px;
     border: 2px solid rgba(110, 149, 185, 0.87);
-    margin-top: 20px;
+    margin-top: 10px;
     color: #ffffff;
-    background: transparent;
-    backdrop-filter: blur(10px);
+    background: rgb(26, 26, 26);
+    width: 100%;
+    position: flex;
+    /* backdrop-filter: blur(10px); */
 }
 
 .contact-section h2 {
     margin-bottom: 10px;
 }
+
