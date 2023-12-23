@@ -1,0 +1,114 @@
+.welcome{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 600;
+    color:#ffffff;
+}
+
+.intro-section {
+    text-align: center;
+    padding: 20px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 2px solid rgba(110, 149, 185, 0.87);
+}
+
+.intro-text {
+    color: #ffffff;
+}
+
+.info-container{
+    margin: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    border-width: 5px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: transparent;
+    border: 2px solid rgba(110, 149, 185, 0.87);
+    backdrop-filter: blur(2px);
+}
+
+.box{
+    margin: 50px;
+    width: calc(50% - 10px);
+    background-color: rgba(26, 26, 26, 0.61);
+    color: #ffffff;
+    border-radius: 10px;
+    text-align: left;
+    line-height: 35px;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    max-width: 500px;
+}
+
+.box button {
+    background-color: #a4d7fc;
+    border-radius: 3px;
+    border: 1px solid #7aa7c7;
+    box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+    box-sizing: border-box;
+    color: #39739d;
+    cursor: pointer;
+    display: inline-block;
+    /* font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif; */
+    font-family:'Courier New', Courier, monospace;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.15385;
+    margin: auto;
+    outline: none;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+
+.box button:hover,
+.box button:focus {
+    background-color: #b3d3ea;
+    color: #2c5777;
+}
+
+.box button:focus {
+    box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.box button:active {
+    background-color: #a0c7e4;
+    box-shadow: none;
+    color: #2c5777;
+}
+
+body {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+    background: url(../images/cool-background.png);
+    padding: 10px;
+    margin: auto;
+}
+
+.contact-section {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(110, 149, 185, 0.87);
+    margin-top: 20px;
+    color: #ffffff;
+    background: transparent;
+    backdrop-filter: blur(10px);
+}
+
+.contact-section h2 {
+    margin-bottom: 10px;
+}
