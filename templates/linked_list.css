@@ -21,6 +21,20 @@
 }
 /* scrollbar made with https://codepen.io/stephenpaton-tech/full/JjRvGmY */
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 .info-container{
     margin: 10px;
     display: flex;
@@ -40,7 +54,7 @@
 }
 
 .language{
-    color : greenyellow;
+    color : rgb(255, 255, 255);
     background-color: rgba(128, 128, 128, 0.397);
     padding: 12px 16px;
     border-radius: 7px;
@@ -85,7 +99,8 @@
 body {
     font-family:'Courier New', Courier, monospace;
     font-size: 20px;
-    background: url(../images/cool-background-internal.png);
+    /* background: url(../images/cool-background-internal.png); */
+    background-color: #235514;
     padding: 10px;
     margin: auto;
 }
