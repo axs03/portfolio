@@ -1,0 +1,91 @@
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #77f8e3 #ffffff00;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background: rgba(8, 18, 48, 0.863);
+    backdrop-filter: blur(2px);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #5cf55c;
+    border-radius: 10px;
+    border: 3px solid #fafafa;
+}
+/* scrollbar made with https://codepen.io/stephenpaton-tech/full/JjRvGmY */
+
+.info-container{
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    border-width: 5px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: transparent;
+    border: 2px solid rgba(110, 149, 185, 0.87);
+    backdrop-filter: blur(2px);
+}
+
+.info-container p{
+    color: white;
+}
+
+.language{
+    color : greenyellow;
+    background-color: rgba(128, 128, 128, 0.397);
+    padding: 12px 16px;
+    border-radius: 7px;
+    text-align: right;
+}
+
+.code_wrapper{
+    position: relative;
+}
+
+.box{
+    margin: 50px;
+    width: calc(50% - 10px);
+    background-color: rgba(26, 26, 26, 0.61);
+    color: #ffffff;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.87);
+    text-align: left;
+    line-height: 35px;
+    height: auto;
+    padding: 10px;
+    max-width: 750px;
+}
+
+.info-container code_box{
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.87);
+    text-align: left;
+    line-height: 35px;
+    height: auto;
+    padding: 10px;
+    max-width: 750px;
+}
+
+.code_wrapper .hljs{
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    border-radius: 7px;;
+}
+
+body {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+    background: url(../images/cool-background-internal.png);
+    padding: 10px;
+    margin: auto;
+}

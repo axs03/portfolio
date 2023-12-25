@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<title>Home</title>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../templates/linked_list.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="//unpkg.com/@highlightjs/cdn-assets@11.5.1/languages/cpp.min.js"></script>
+    <script src = "../scripts/code_highlight.js"></script>
+</head>
+<body>
+    <div class="info-container">
+        <div class = "box">
+            <u><b>Code</b></u><br>
+        </div>
+
+        <div class = "box">
+            <b><u>Output</u></b><br>
+        </div>
+
+        <div class = "box">
+            <p class = "language">C++ Code</p>
+            <div class = "code_wrapper">
+                <pre>
+                    <code>
+#include &lt;iostream&gt;
+using namespace std;
+
+class Node {
+public:
+    int data;
+    Node* next;
+
+    Node(int value) {
+        data = value;
+        next = nullptr;
+    }
+};
+
+class Queue {
+private:
+    Node* front;
+    Node* rear;
+
+public:
+    Queue() {
+        front = rear = nullptr;
+    }
+
+    bool isEmpty() {
+        return front == nullptr;
+    }
+
+    void enqueue(int value) {
+        Node* newNode = new Node(value);
+        if (isEmpty()) {
+            front = rear = newNode;
+        } else {
+            rear->next = newNode;
+            rear = newNode;
+        }
+    }
+
+    int dequeue() {
+        if (isEmpty()) {
+            cout << "Queue is empty. Cannot dequeue." << endl;
+            return -1;
+        }
+        int dequeuedValue = front->data;
+        Node* temp = front;
+        front = front->next;
+        delete temp;
+        return dequeuedValue;
+    }
+
+    int peek() {
+        if (isEmpty()) {
+            cout << "Queue is empty. Cannot peek." << endl;
+            return -1;
+        }
+        return front->data;
+    }
+};
+
+int main() {
+    Queue queue;  // Create an empty queue
+
+    queue.enqueue(1);
+    queue.enqueue(2);
+    queue.enqueue(3);
+    queue.enqueue(7);
+    
+
+    cout << "Front element: " << queue.peek() << endl;  // Peek
+    cout << "Dequeue: " << queue.dequeue() << endl;
+    cout << "Front element after dequeue: " << queue.peek() << endl;
+    cout << "Dequeue: " << queue.dequeue() << endl;
+    cout << "Front element after dequeue: " << queue.peek() << endl;
+    cout << "Dequeue: " << queue.dequeue() << endl;
+    cout << "Front element after dequeue: " << queue.peek() << endl;
+
+    return 0;
+}
+
+
+                    </code>
+                </pre>
+            </div>
+        </div>
+
+        <div class = "box">
+            <p class="language"> C++ Output </p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+</body>
+</html>
