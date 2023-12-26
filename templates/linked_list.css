@@ -1,7 +1,7 @@
 /* Firefox */
 * {
     scrollbar-width: thin;
-    scrollbar-color: #77f8e3 #ffffff00;
+    scrollbar-color: #8d6e09 #ffffff00;
 }
 
 /* Chrome, Edge, and Safari */
@@ -10,33 +10,31 @@
 }
 
 *::-webkit-scrollbar-track {
-    background: rgba(8, 18, 48, 0.863);
+    background: rgba(8, 18, 48, 0);
     backdrop-filter: blur(2px);
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: #5cf55c;
+    background-color: #8d6e09;
     border-radius: 10px;
     border: 3px solid #fafafa;
 }
 /* scrollbar made with https://codepen.io/stephenpaton-tech/full/JjRvGmY */
 
-html,
-body {
+html{
   margin: 0;
   padding: 0;
 }
 
 .background {
   position: absolute;
-  display: block;
+  display: flex;
   top: 0;
   left: 0;
   z-index: -1;
 }
 
 .info-container{
-    margin: 10px;
     display: flex;
     flex-wrap: wrap;
     border-radius: 10px;
@@ -45,8 +43,8 @@ body {
     justify-content: center;
     position: relative;
     background: transparent;
-    border: 2px solid rgba(110, 149, 185, 0.87);
-    backdrop-filter: blur(2px);
+    max-height: 100vh;
+    overflow-y: auto;
 }
 
 .info-container p{
@@ -77,6 +75,7 @@ body {
     height: auto;
     padding: 10px;
     max-width: 750px;
+    backdrop-filter: blur(2px);
 }
 
 .info-container code_box{
@@ -96,11 +95,55 @@ body {
     border-radius: 7px;;
 }
 
+.home_button {
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100px;
+    will-change: transform;
+  }
+  
+  .home_button:disabled {
+    pointer-events: none;
+  }
+  
+  .home_button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  .home_button:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+
 body {
     font-family:'Courier New', Courier, monospace;
     font-size: 20px;
     /* background: url(../images/cool-background-internal.png); */
-    background-color: #235514;
-    padding: 10px;
+    background-color: #3f3103;
+    padding: 0;
     margin: auto;
 }
