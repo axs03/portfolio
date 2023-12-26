@@ -10,7 +10,7 @@
 }
 
 *::-webkit-scrollbar-track {
-    background: rgba(8, 18, 48, 0.863);
+    background: rgba(8, 18, 48, 0);
     backdrop-filter: blur(2px);
 }
 
@@ -21,19 +21,17 @@
 }
 /* scrollbar made with https://codepen.io/stephenpaton-tech/full/JjRvGmY */
 
-html,
-body {
+html{
   margin: 0;
   padding: 0;
 }
 
 .background {
   position: absolute;
-  display: block;
+  display: flex;
   top: 0;
   left: 0;
   z-index: -1;
-  background-repeat: repeat;
 }
 
 .welcome{
@@ -50,7 +48,7 @@ body {
     backdrop-filter: blur(10px);
     border-radius: 10px;
     margin-bottom: 20px;
-    border: 2px solid rgba(110, 149, 185, 0.87);
+    /* border: 2px solid rgba(110, 149, 185, 0.87); */
 }
 
 .intro-text {
@@ -59,7 +57,6 @@ body {
 }
 
 .info-container{
-    margin: 50px;
     display: flex;
     flex-wrap: wrap;
     border-radius: 10px;
@@ -68,8 +65,8 @@ body {
     justify-content: center;
     position: relative;
     background: transparent;
-    border: 2px solid rgba(110, 149, 185, 0.87);
-    backdrop-filter: blur(2px);
+    max-height: 100vh;
+    overflow-y: auto;
 }
 
 .info-container p{
@@ -86,10 +83,10 @@ body {
     border: 2px solid rgba(255, 255, 255, 0.87);
     text-align: left;
     line-height: 35px;
-    width: auto;
     height: auto;
     padding: 10px;
     max-width: 750px;
+    backdrop-filter: blur(2px);
 }
 
 .box button {
@@ -138,13 +135,11 @@ body {
     font-size: 20px;
     /* background: url(../images/cool-background.png); */
     background-color: #0e1922;
-    padding: 10px;
     margin: auto;
 }
 
 .contact-section {
     text-align: center;
-    /* padding: 20px; */
     padding-top: 20px;
     border: 2px solid rgba(110, 149, 185, 0.87);
     margin-top: 10px;
@@ -152,7 +147,6 @@ body {
     background: rgb(26, 26, 26);
     width: 100%;
     position: flex;
-    /* backdrop-filter: blur(10px); */
 }
 
 .contact-section h2 {
