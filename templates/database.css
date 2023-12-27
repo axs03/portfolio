@@ -1,7 +1,7 @@
 /* Firefox */
 * {
     scrollbar-width: thin;
-    scrollbar-color: #9b0101 #ffffff00;
+    scrollbar-color: #8d6e09 #ffffff00;
 }
 
 /* Chrome, Edge, and Safari */
@@ -15,7 +15,7 @@
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: #9b0101;
+    background-color: #8d6e09;
     border-radius: 10px;
     border: 3px solid #fafafa;
 }
@@ -65,7 +65,8 @@ html{
 
 .box{
     margin: 50px;
-    width: calc(50% - 10px);
+    /* width: calc(50% - 10px); */
+    width: relative;
     background-color: rgba(26, 26, 26, 0.61);
     color: #ffffff;
     border-radius: 10px;
@@ -74,7 +75,6 @@ html{
     line-height: 35px;
     height: auto;
     padding: 10px;
-    max-width: 750px;
     backdrop-filter: blur(2px);
 }
 
@@ -85,7 +85,6 @@ html{
     line-height: 35px;
     height: auto;
     padding: 10px;
-    max-width: 750px;
 }
 
 .code_wrapper .hljs{
@@ -93,10 +92,6 @@ html{
     color: white;
     font-size: 17px;
     border-radius: 7px;;
-}
-
-.left_col{
-    width: 100%;
 }
 
 .home_button {
@@ -126,28 +121,49 @@ html{
     width: 100px;
     will-change: transform;
 }
-
+  
 .home_button:disabled {
     pointer-events: none;
 }
-
+  
 .home_button:hover {
     color: #fff;
     background-color: #1A1A1A;
     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
     transform: translateY(-2px);
 }
-
+  
 .home_button:active {
     box-shadow: none;
     transform: translateY(0);
+}
+
+/* table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #110c0c;
+}
+
+tr:hover {
+    background-color: #5a5a5a7a;
 }
 
 body {
     font-family:'Courier New', Courier, monospace;
     font-size: 20px;
     /* background: url(../images/cool-background-internal.png); */
-    background-color: #520a05;
+    background-color: #6e044b;
     padding: 0;
     margin: auto;
 }
