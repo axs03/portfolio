@@ -8,13 +8,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
     <script src="../scripts/particle-bg.js"></script>
+    <script src="../scripts/custom_input.js"></script>
     <script src="../scripts/expand.js"></script>
 </head>
 <body>
     <canvas class="background"></canvas>
     <div class="code-wrapper">
-        
 
+        <div class="Cur_Input_Line">
+            <span class="Ter_Green">User@ <?php echo $_SERVER['REMOTE_ADDR']; ?></span>
+            <span class="Ter_Gray">:</span>
+            <span class="Ter_Blue">~/Desktop/Aman_Portfolio/introduction.py</span>
+            <span class="Ter_Gray">$</span>
+            <input type="text" class="Ter_Input">
+            <div class="Blink"></div>
+        </div>
         <div class="introduction-box box">
             <pre>
                 <code class="language-python">
@@ -23,7 +31,16 @@ class Introduction:
         this.name = "Aman Sahu"
         this.email = "amansahu9000@gmail.com"
         </code>this.linkedIn = <a href="https://linkedin.com/in/amans135">Aman Sahu</a><code class="language-python">
-        </code>this.github = <a href="https://github.com/as9219">as9219</a>
+        </code>this.github = <a href="https://github.com/as9219">as9219</a><code class="language-python">
+
+    def introduce():
+        printf("Hello! My name is {}.", this.name)
+        print("I am a senior studying Computer Science learning new technologies.")
+        printf("LinkedIn : {} \nGitHub : {}", this.linkedIn, this.github)
+
+    def peekResume(self):
+        return Resume.html
+        </code>
             </pre>
         </div>
         <button id="arrow-button">Toggle Code Sections</button>
@@ -43,22 +60,6 @@ class Projects(self):
                 '<a href='https://github.com/as9219/Maintenance_Web_App'>Maintenance Web App</a>' : 'Flask', 
                 '<a href='https://github.com/as9219/SUNLAB-Card-Access'>SUNLAB Card Access System</a>' : 'Python'}<code class="language-python">
         return fullStackProjects
-                    </code>
-                </pre>
-            </div>
-            <div class="box">
-                <pre>
-                    <code class="language-python">
-class IntermediateProgrammer:
-    def __init__(self, name, age, skills):
-        this.name = "Aman Sahu"
-        this.age = 21
-        this.skills = {"Python" : "Advanced", 
-                        "C++" : "Intermediate", 
-                        "Java" : "Intermediate"}
-
-    def peekResume(self):
-        return Resume.html
                     </code>
                 </pre>
             </div>

@@ -41,7 +41,7 @@ html{
 }
 
 .introduction-box {
-    width: 60%; /* Adjust width as needed */
+    width: 80%; /* Adjust width as needed */
     margin-top: 10px;
     color: #ffffff;
     text-align: center;
@@ -110,7 +110,7 @@ html{
 body {
     font-family:'Courier New', Courier, monospace;
     font-size: 20px;
-    background-color: #d7d7d7;
+    background-color: #252525;
     margin: auto;
 }
 
@@ -155,3 +155,72 @@ body {
     margin-left: 20px; /* Align button with the sections */
 }
 
+.Cur_Input_Line{
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+    width: calc(80% - 20px);
+    height: 10%;
+    border-radius: 5px;;
+    font-size: 20px;
+    background-color: #000;
+}
+
+.Ter_Green{
+    margin-left: 5px;
+    color:chartreuse
+}
+.Ter_Blue{
+    color:cyan
+}
+.Ter_Gray{
+    color: rgb(167, 166, 166);
+}
+
+input{
+    color: #159f1a;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: monospace;
+
+    border: none;
+    border-color: #ffffff;
+    background-color: rgb(0, 0, 0);
+    width: 20%;
+}
+input:focus{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: monospace;
+
+    border: none;
+    border-color: transparent;
+    outline: none;
+    background-color:rgb(0, 0, 0);
+
+    width: 20%;
+    caret-color: #000;
+}
+
+
+.Ter_Input{
+    width: 20%;
+}
+
+@keyframes Blink_Ani {
+    from{ background-color: #000;}
+    to{ background-color: #fff;}
+}
+
+.Blink{
+    position:absolute;
+    left:310px;
+    top: 3px;
+    height: 20px;
+    width: 12px;
+    background-color: #fff;
+    opacity: 1;
+    z-index: 5;
+
+}
