@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<title>Databases</title>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../templates/database.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="//unpkg.com/@highlightjs/cdn-assets@11.5.1/languages/cpp.min.js"></script>
+    <script src = "../scripts/code_highlight.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+    <script src="../scripts/particle-bg.js"></script>
+</head>
+<body>
+    <canvas class="background"></canvas>
+    <div class = "info_container">
+        <button onclick = "window.location.href='../html/landing.html'" class = "home_button">Home</button>
+
+        <div class = "box">
+            <p>Under Construction! Come Back Soon!</p>
+        </div>
+        
+        <div class = "box">
+            Some Basic MySQL Table commands : <br>
+            <table border = 1>
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>SELECT * FROM table_name;</td>
+                    <td>Retrieve all records from a table. <code>[READ]</code></td>
+                </tr>
+                <tr>
+                    <td>INSERT INTO table_name (column1, column2, ...) VALUES (value1, value2, ...);</td>
+                    <td>Insert a new record into a table. <code>[CREATE]</code></td>
+                </tr>
+                <tr>
+                    <td>UPDATE table_name SET column1 = value1, column2 = value2, ... WHERE condition;</td>
+                    <td>Update records in a table based on a condition. <code>[UPDATE]</code></td>
+                </tr>
+                <tr>
+                    <td>DELETE FROM table_name WHERE condition;</td>
+                    <td>Delete records from a table based on a condition. <code>[DELETE]</code></td>
+                </tr>
+            </table>
+            <br>The operations above cover the basic <code>CRUD</code> functionality. 
+        </div>
+
+        <div class = "box">
+            <u>Image Handling using Flask and FireBase</u>
+            <p>To start, make sure you have </p>
+        </div>
+    </div>
+    <script src="../scripts/particles.min.js"></script>
+</body>
+</html>

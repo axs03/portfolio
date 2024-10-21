@@ -1,0 +1,226 @@
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #111316 #fffffff2;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(2px);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #77a9f8;
+    border-radius: 10px;
+    border: 3px solid #fafafa;
+}
+/* scrollbar made with https://codepen.io/stephenpaton-tech/full/JjRvGmY */
+
+html{
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.welcome{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 600;
+    color:#111010;
+}
+
+.introduction-box {
+    width: 80%; /* Adjust width as needed */
+    margin-top: 10px;
+    color: #ffffff;
+    text-align: center;
+    height: 70%;
+}
+
+.code-container {
+    display: flex;
+    margin-left: 20px; /* Adjust the indent as needed */
+    justify-content: flex-start;
+    margin: auto;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.box{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    margin: auto;
+    backdrop-filter: blur(1.3px);
+    border-radius: 5px;
+}
+
+.box button {
+    background-color: #a4d7fc;
+    border-radius: 3px;
+    border: 1px solid #7aa7c7;
+    box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+    box-sizing: border-box;
+    color: #39739d;
+    cursor: pointer;
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.15385;
+    outline: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    /* margin: auto; this is what centers the button mainly */
+    position: relative;
+}
+
+.box button:hover,
+.box button:focus {
+    background-color: #b3d3ea;
+    color: #2c5777;
+}
+
+.box button:focus {
+    box-shadow: 10 10 10 4px rgba(0, 149, 255, .15);
+}
+
+.box button:active {
+    background-color: #a0c7e4;
+    box-shadow: none;
+    color: #2c5777;
+}
+
+body {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+    background-color: #252525;
+    margin: auto;
+}
+
+.contact-section {
+    text-align: center;
+    padding-bottom: 80px;
+    border: 2px solid rgba(110, 149, 185, 0);
+    color: #000000;
+    background: rgba(26, 26, 26, 0);
+    width: 100%;
+}
+
+.contact-section p {
+    color:#000000;
+}
+
+.contact-section h2 {
+    margin-bottom: 10px;
+}
+
+.language-python{
+    width: calc(94% - 5px);
+    border-radius: 10px;
+}
+
+.code-wrapper {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    max-height: 100vh;
+    overflow-y: auto;
+    
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+/* Style for the arrow button */
+#arrow-button {
+    margin-left: 20px; /* Align button with the sections */
+}
+
+.Cur_Input_Line{
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+    width: calc(80% - 20px);
+    height: 10%;
+    border-radius: 5px;;
+    font-size: 20px;
+    background-color: #000;
+}
+
+.Ter_Green{
+    margin-left: 5px;
+    color:chartreuse
+}
+.Ter_Blue{
+    color:cyan
+}
+.Ter_Gray{
+    color: rgb(167, 166, 166);
+}
+
+input{
+    color: #159f1a;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: monospace;
+
+    border: none;
+    border-color: #ffffff;
+    background-color: rgb(0, 0, 0);
+    width: 20%;
+}
+input:focus{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: monospace;
+
+    border: none;
+    border-color: transparent;
+    outline: none;
+    background-color:rgb(0, 0, 0);
+
+    width: 20%;
+    caret-color: #000;
+}
+
+
+.Ter_Input{
+    width: 20%;
+}
+
+@keyframes Blink_Ani {
+    from{ background-color: #000;}
+    to{ background-color: #fff;}
+}
+
+.Blink{
+    position:absolute;
+    left:310px;
+    top: 3px;
+    height: 20px;
+    width: 12px;
+    background-color: #fff;
+    opacity: 1;
+    z-index: 5;
+
+}

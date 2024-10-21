@@ -1,0 +1,169 @@
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #8d6e09 #ffffff00;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+    background: rgba(8, 18, 48, 0);
+    backdrop-filter: blur(2px);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #8d6e09;
+    border-radius: 10px;
+    border: 3px solid #fafafa;
+}
+/* scrollbar made with https://codepen.io/stephenpaton-tech/full/JjRvGmY */
+
+html{
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.info-container{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    border-width: 5px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: transparent;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+.info-container p{
+    color: white;
+}
+
+.language{
+    color : rgb(255, 255, 255);
+    background-color: rgba(128, 128, 128, 0.397);
+    padding: 12px 16px;
+    border-radius: 7px;
+    text-align: right;
+}
+
+.code_wrapper{
+    position: relative;
+}
+
+.box{
+    margin: 50px;
+    /* width: calc(50% - 10px); */
+    width: relative;
+    background-color: rgba(26, 26, 26, 0.61);
+    color: #ffffff;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.87);
+    text-align: left;
+    line-height: 35px;
+    height: auto;
+    padding: 10px;
+    backdrop-filter: blur(2px);
+}
+
+.info-container code_box{
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.87);
+    text-align: left;
+    line-height: 35px;
+    height: auto;
+    padding: 10px;
+}
+
+.code_wrapper .hljs{
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    border-radius: 7px;;
+}
+
+.home_button {
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100px;
+    will-change: transform;
+}
+  
+.home_button:disabled {
+    pointer-events: none;
+}
+  
+.home_button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+  
+.home_button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+/* table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #110c0c;
+}
+
+tr:hover {
+    background-color: #5a5a5a7a;
+}
+
+body {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+    /* background: url(../images/cool-background-internal.png); */
+    background-color: #6e044b;
+    padding: 0;
+    margin: auto;
+}

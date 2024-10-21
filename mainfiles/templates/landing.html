@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/landing.css' %}"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+    <script src="{% static 'js/particle-bg.js' %}"></script>
+    <script src="{% static 'js/custom_input.js' %}"></script>
+    <script src="{% static 'js/expand.js' %}"></script>
+</head>
+<body>
+    <canvas class="background"></canvas>
+    <div class="code-wrapper">
+        <div class="Cur_Input_Line">
+            <span class="Ter_Green">User@ <?php echo $_SERVER['REMOTE_ADDR']; ?></span>
+            <span class="Ter_Gray">:</span>
+            <span class="Ter_Blue">~/Desktop/Aman_Portfolio/introduction.py</span>
+            <span class="Ter_Gray">$</span>
+            <input type="text" class="Ter_Input">
+            <div class="Blink"></div>
+        </div>
+        <div class="introduction-box box">
+            <pre>
+                <code class="language-python">
+class Introduction:
+    def __init__(self, name, email):
+        this.name = "Aman Sahu"
+        this.email = "amansahu9000@gmail.com"
+        </code>this.linkedIn = <a href="https://linkedin.com/in/amans135">Aman Sahu</a><code class="language-python">
+        </code>this.github = <a href="https://github.com/as9219">as9219</a><code class="language-python">
+
+    def introduce():
+        printf("Hello! My name is {}.", this.name)
+        print("I am a senior studying Computer Science learning new technologies.")
+        printf("LinkedIn : {} \nGitHub : {}", this.linkedIn, this.github)
+
+    def peekResume(self):
+        return Resume.html
+        </code>
+            </pre>
+        </div>
+        <button id="arrow-button">Toggle Code Sections</button>
+        <div class="code-container">
+            <div class="box">
+                <pre>
+                    <code class="language-python">
+class Projects(self):
+    def peekDataStructureExamples(self):</code>
+        dataStructures = ['<a href='../html/array.html' class="array_imp">Array</a>', 
+                '<a href='../html/linked_list.html' class="ll_imp">Linked List</a>', 
+                '<a href='../html/stack.html' class="stack_imp">Stack</a>']<code class="language-python">
+        return dataStructures
+
+    def peekFullStackProjects(self):</code>
+        fullStackProjects = {'<a href='https://github.com/as9219/CRUD_Operations'>CRUD Operations</a>' : 'HTML and PHP', 
+                '<a href='https://github.com/as9219/Maintenance_Web_App'>Maintenance Web App</a>' : 'Flask', 
+                '<a href='https://github.com/as9219/SUNLAB-Card-Access'>SUNLAB Card Access System</a>' : 'Python'}<code class="language-python">
+        return fullStackProjects
+                    </code>
+                </pre>
+            </div>
+        </div>
+    </div>
+
+    <script src="../scripts/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/components/prism-python.min.js"></script>
+</body>
+</html>
