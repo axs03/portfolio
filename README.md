@@ -1,6 +1,6 @@
 <html>
   <body>
-    For running in VSCode, type in <code>python manage.py runserver</code> into terminal.
+    For running Django Server in VSCode, type in <code>python manage.py runserver</code> into terminal. 
     
     Credits:
     Scrollbar : https://codepen.io/stephenpaton-tech/full/JjRvGmY <br>
