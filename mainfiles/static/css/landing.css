@@ -1,6 +1,6 @@
 /* Firefox */
 * {
-    scrollbar-width: thin;
+    scrollbar-width: 10px;
     scrollbar-color: #111316 #fffffff2;
 }
 
@@ -15,9 +15,9 @@
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: #77a9f8;
+    background-color: #5f82ed;
     border-radius: 10px;
-    border: 3px solid #fafafa;
+    /* border: 3px solid #fafafa; */
 }
 /* scrollbar made with https://codepen.io/stephenpaton-tech/full/JjRvGmY */
 
@@ -36,8 +36,9 @@ html{
 
 .welcome{
     font-family:'Courier New', Courier, monospace;
-    font-weight: 600;
-    color:#111010;
+    font-size: 1.8rem;
+    color: #333;
+    margin: 0;
 }
 
 .introduction-box {
@@ -58,58 +59,98 @@ html{
 }
 
 .box{
+    width: 48%;
+    height: 90vh;
     display: flex;
-    padding: 10px;
     justify-content: center;
-    margin: auto;
-    backdrop-filter: blur(1.3px);
-    border-radius: 5px;
-    border: 5px;
-}
-
-.box button {
-    background-color: #a4d7fc;
-    border-radius: 3px;
-    border: 1px solid #6f6f6f;
-    box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+    align-items: center;
     box-sizing: border-box;
-    color: #39739d;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    backdrop-filter: blur(1.2px);
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 15px;
+}
+
+.left-side h3.welcome {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.custom-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #0073e6;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    display: block;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 19px;
-    font-weight: 400;
-    line-height: 1.15385;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    white-space: nowrap;
-    /* margin: auto; this is what centers the button mainly */
-    position: relative;
+    transition: background-color 0.3s ease;
 }
 
-.box button:hover,
-.box button:focus {
-    background-color: #b3d3ea;
-    color: #2c5777;
+.custom-button:hover {
+    background-color: #005bb5;
 }
 
-.box button:focus {
-    box-shadow: 10 10 10 4px rgba(0, 149, 255, .15);
-}
-
-.box button:active {
-    background-color: #a0c7e4;
-    box-shadow: none;
-    color: #2c5777;
+.right-side {
+    overflow-y: auto;
 }
 
 body {
     font-family:'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+    height: 100vh;
     font-size: 20px;
-    background-color: #ffffff;
-    margin: auto;
+    /* Below changes the BG color */
+    background-color: #020202; 
+    margin: 0;
+}
+
+.typewriter {
+    font-family: monospace;
+    overflow: hidden;
+    font-size: 2.2rem;
+    white-space: nowrap;
+    border-right: 3px solid;
+    animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
+
+.scrollable-list {
+    width: 90%;
+}
+
+.scroll-item {
+    padding: 15px;
+    background-color: #000000; 
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 0.5px solid #c6c6c6;
+    text-align: center;
+    color: #ffffff;
 }
