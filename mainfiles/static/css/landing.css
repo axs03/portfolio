@@ -82,7 +82,7 @@ html{
 
 .left-side h3.welcome {
     font-size: 1.2rem;
-    color: #666;
+    color: #9f9f9f;
 }
 
 .button-container {
@@ -117,7 +117,7 @@ body {
     height: 100vh;
     font-size: 20px;
     /* Below changes the BG color */
-    background-color: #020202; 
+    background-color: #8b8888; 
     margin: 0;
 }
 
@@ -125,7 +125,7 @@ body {
     font-family: monospace;
     overflow: hidden;
     font-size: 2.2rem;
-    white-space: nowrap;
+    white-space: nowrap; 
     border-right: 3px solid;
     animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
 }
@@ -137,7 +137,7 @@ body {
 
 @keyframes blink-caret {
     from, to { border-color: transparent; }
-    50% { border-color: black; }
+    50% { border-color: rgb(119, 119, 119); }
 }
 
 .scrollable-list {
