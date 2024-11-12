@@ -1,0 +1,53 @@
+*{
+    font-family:'Courier New', Courier, monospace;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.pdf-viewer {
+    width: 100%;
+    max-width: 800px;
+    height: 100vh;
+    background-color: #000000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #5f82ed;
+    color: #ffffff;
+}
+
+.toolbar h1 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.download-btn {
+    color: #ffffff;
+    background-color: #5f82ed;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #004494;
+}
+
+.pdf-embed {
+    width: 100%;
+    height: calc(100% - 50px);
+    border: none;
+}

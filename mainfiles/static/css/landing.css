@@ -2,6 +2,7 @@
 * {
     scrollbar-width: 10px;
     scrollbar-color: #111316 #fffffff2;
+    font-family:'Courier New', Courier, monospace;
 }
 
 /* Chrome, Edge, and Safari */
@@ -35,37 +36,19 @@ html{
 }
 
 .welcome{
-    font-family:'Courier New', Courier, monospace;
     font-size: 1.8rem;
-    color: #333;
+    color: #ffffff;
     margin: 0;
 }
 
-.introduction-box {
-    width: 80%; /* Adjust width as needed */
-    margin-top: 10px;
-    color: #ffffff;
-    text-align: center;
-    height: 70%;
-}
-
-.code-container {
-    display: flex;
-    margin-left: 20px; /* Adjust the indent as needed */
-    justify-content: flex-start;
-    margin: auto;
-    width: 100%;
-    overflow-x: auto;
-}
-
 .box{
-    width: 48%;
+    width: 50%;
     height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    border: 2px solid #ccc;
+    border: 0px solid #ccc;
     border-radius: 10px;
     padding: 20px;
     margin: 10px;
@@ -82,12 +65,11 @@ html{
 
 .left-side h3.welcome {
     font-size: 1.2rem;
-    color: #666;
+    color: #ffffff;
 }
 
 .button-container {
-    display: flex;
-    gap: 10px;
+    display: absolute;
     margin-top: 20px;
 }
 
@@ -117,7 +99,7 @@ body {
     height: 100vh;
     font-size: 20px;
     /* Below changes the BG color */
-    background-color: #020202; 
+    background-color: #000000; 
     margin: 0;
 }
 
@@ -125,7 +107,7 @@ body {
     font-family: monospace;
     overflow: hidden;
     font-size: 2.2rem;
-    white-space: nowrap;
+    white-space: nowrap; 
     border-right: 3px solid;
     animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
 }
@@ -137,20 +119,5 @@ body {
 
 @keyframes blink-caret {
     from, to { border-color: transparent; }
-    50% { border-color: black; }
-}
-
-.scrollable-list {
-    width: 90%;
-}
-
-.scroll-item {
-    padding: 15px;
-    background-color: #000000; 
-    margin-bottom: 10px;
-    margin-top: 10px;
-    border-radius: 10px;
-    border: 0.5px solid #c6c6c6;
-    text-align: center;
-    color: #ffffff;
+    50% { border-color: rgb(119, 119, 119); }
 }
