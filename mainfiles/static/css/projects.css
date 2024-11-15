@@ -36,20 +36,49 @@ html{
 }
 
 .scrollable-list {
-    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow-y: auto;
 }
 
 .scroll-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
     padding: 15px;
-    /* background-color: #000000;  */
-    backdrop-filter: blur(2px);
     margin-bottom: 10px;
-    margin-top: 10px;
-    border-radius: 10px;
-    border: 0.5px solid #c6c6c6;
-    text-align: center;
-    color: #ffffff;
+    /* background-color: #f9f9f9; */
+    backdrop-filter: blur(2px);
+    cursor: pointer;
+    transition: all 0.9s ease;
 }
+
+.scroll-item .details {
+    display: none;
+    margin-top: 10px;
+    color: #555;
+}
+
+.scroll-item.expanded .details {
+    display: block;
+}
+
+.scroll-item.expanded {
+    /* background-color: #e8f4fc; */
+    backdrop-filter: blur(2px);
+    border-color: #69c3ff;
+    transform: scale(1.02);
+}
+
+.scroll-item h2 {
+    margin: 0;
+}
+
+.summary {
+    color: #333;
+    font-size: 0.9rem;
+}
+
 
 .tags {
     display: flex;

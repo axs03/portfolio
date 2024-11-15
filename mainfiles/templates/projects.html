@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<title>Array Code</title>
+<title>Projects</title>
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,21 +8,25 @@
 </head>
 <body>
     <div class="scrollable-list">
-        <div class="scroll-item">
+        <div class="scroll-item" onclick="toggleDetails(this)">
             <h2>Project 1</h2>
-            <div class="tags"> 
-                <div class="html-tag">HTML</div>
-                <div class="python-tag">Python</div>
+            <div class="summary">
+                <p>This is a summary of the project</p>
             </div>
-        </div>
-
-        
-        <div class="scroll-item">
-            <h2>Project 2</h2>
-        </div>
-        <div class="scroll-item">
-            <h2>Project 3</h2>
+            <div class="details">
+                <p>More details about Project 1, such as technical implementation, challenges, and results.</p>
+                <div class="tags"> 
+                    <div class="php-tag">PHP</div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
+
+<!-- For expanding the project box -->
+<script>
+    function toggleDetails(item) {
+        item.classList.toggle('expanded');
+    }
+</script>
 </html>
