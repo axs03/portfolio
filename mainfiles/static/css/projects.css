@@ -2,6 +2,7 @@
 * {
     scrollbar-width: thin;
     scrollbar-color: #5f82ed #ffffff00;
+    font-family:'Courier New', Courier, monospace;
 }
 
 /* Chrome, Edge, and Safari */
@@ -40,11 +41,64 @@ html{
 
 .scroll-item {
     padding: 15px;
-    background-color: #000000; 
+    /* background-color: #000000;  */
+    backdrop-filter: blur(2px);
     margin-bottom: 10px;
     margin-top: 10px;
     border-radius: 10px;
     border: 0.5px solid #c6c6c6;
     text-align: center;
     color: #ffffff;
+}
+
+.tags {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+.html-tag, .python-tag, .php-tag, .java-tag, .cpp-tag {
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    background-color: #f3f3f3;
+    border: 1px solid #dcdcdc;
+    color: #555;
+    font-weight: bold;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.html-tag {
+    background-color: #69c3ff;
+    color: #0073e6;
+    border-color: #0073e6;
+}
+
+.python-tag {
+    background-color: #ffe260;
+    color: #e69f00;
+    border-color: #e69f00;
+}
+
+.php-tag {
+    background-color: #d179f7;
+    color: #a100e6;
+    border-color: #a100e6;
+}
+
+.java-tag {
+    background-color: #ffb347;
+    color: #e65100;
+    border-color: #e65100;
+}
+
+.cpp-tag {
+    background-color: #b0e57c;
+    color: #4caf50;
+    border-color: #4caf50;
+}
+
+h2 {
+    text-align: left;
 }
