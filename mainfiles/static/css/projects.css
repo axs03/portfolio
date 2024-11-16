@@ -56,7 +56,7 @@ html{
 .scroll-item .details {
     display: none;
     margin-top: 10px;
-    color: #555;
+    color: #f1f1f1;
 }
 
 .scroll-item.expanded .details {
@@ -74,8 +74,12 @@ html{
     margin: 0;
 }
 
+.project-heading {
+    color: white;
+}
+
 .summary {
-    color: #333;
+    color: #d0d0d0;
     font-size: 0.9rem;
 }
 
@@ -86,7 +90,7 @@ html{
     margin-top: 8px;
 }
 
-.html-tag, .python-tag, .php-tag, .java-tag, .cpp-tag {
+.html-tag, .python-tag, .php-tag, .java-tag, .cpp-tag, .swift-tag, .docker-tag, .aws-tag {
     display: inline-block;
     padding: 4px 8px;
     font-size: 0.9rem;
@@ -126,6 +130,24 @@ html{
     background-color: #b0e57c;
     color: #4caf50;
     border-color: #4caf50;
+}
+
+.swift-tag {
+    background-color: #ffffff;
+    color: #ffae00;
+    border-color: #ffae00;
+}
+
+.docker-tag {
+    background-color: #009dff;
+    color: #0022ff;
+    border-color: #0022ff;
+}
+
+.aws-tag {
+    background-color: #1c3552;
+    color: #00ffa2;
+    border-color: #00ffa2;
 }
 
 h2 {
