@@ -3,22 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Aman Sahu | Portfolio</title>
     <link rel="stylesheet" type="text/css" href="static/css/landing.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
     <script src="static/js/particle-bg.js"></script>
     <script src="static/js/custom_input.js"></script>
     <script src="static/js/expand.js"></script>
+    <script src="static/js/landing.js"></script>
 </head>
 <body>
     <canvas class="background"></canvas>
 
     <div class="container">
-        <div class="box left-side">
-            <h1 class="welcome">Welcome</h1>
+        <!-- Top Section: Header -->
+        <div class="box top-side">
             <h1 class="welcome slide-in">Aman Sahu</h1>
-            <h3 class="welcome">Computer Science student | Penn State University</h3>
+            <h3>Computer Science | Penn State University</h3>
+            <p class="intro-text">
+                Passionate about building innovative solutions through technology. 
+                I specialize in web development, machine learning, and software engineering.
+            </p>
+            <h3>About Me</h3>
+            <p class="intro-text">
+                I'm a Computer Science student at Penn State University with a strong interest in software development, 
+                artificial intelligence, and data analysis. My focus is on creating user-centered solutions 
+                that combine functionality with aesthetics.
+            </p>
             <div class="button-container">
                 <button class="custom-button" onclick="scrollToContent(); loadContent('templates/projects.html')">Projects</button>
                 <button class="custom-button" onclick="scrollToContent(); loadContent('templates/resume.html')">My Resume</button>
@@ -26,39 +37,9 @@
             </div>
         </div>
 
-        <div class="box right-side" id="content-box">
+        <div class="box bottom-side" id="content-box">
             <iframe id="contentFrame" src="" frameborder="0" width="100%" height="100%"></iframe>
         </div>
     </div>
-
-    <script>
-        function loadContent(page) {
-            document.getElementById('contentFrame').src = page;
-        }
-
-        function scrollToContent() {
-            const contentBox = document.getElementById('content-box');
-            contentBox.scrollIntoView({ behavior: 'smooth' });
-        }
-
-        window.addEventListener('load', () => {
-            const typewriter = document.querySelector('.typewriter');
-            
-            if (typewriter) {
-                const span = document.createElement('span');
-                span.style.visibility = 'hidden';
-                span.style.position = 'absolute';
-                span.style.whiteSpace = 'nowrap';
-                span.textContent = typewriter.textContent;
-
-                document.body.appendChild(span);
-                const width = span.offsetWidth;
-                document.body.removeChild(span);
-
-                typewriter.style.setProperty('--typing-width', `${width}px`);
-                typewriter.style.width = `${width}px`;
-            }
-        });
-    </script>
 </body>
 </html>
