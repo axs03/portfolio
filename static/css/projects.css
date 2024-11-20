@@ -26,14 +26,13 @@ html, body {
     overflow: hidden;
 }
 
-/* Layout */
 .container {
     display: flex;
     height: 100%;
 }
 
 .details-panel {
-    width: 50%;
+    width: 100%;
     background-color: #40404041;
     color: #f1f1f1;
     padding: 20px;
@@ -60,7 +59,7 @@ html, body {
 }
 
 .scrollable-list {
-    width: 50%;
+    width: 100%;
     padding: 20px;
     backdrop-filter: blur(2px);
     box-sizing: border-box;

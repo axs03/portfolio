@@ -43,14 +43,14 @@ body:hover {
 
 .container {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .box {
     width: 100%;
-    height: 80vh;
+    height: 95vh;
     display: flex;
     align-items: center;
     box-sizing: border-box;
