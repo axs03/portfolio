@@ -26,9 +26,9 @@ window.addEventListener('scroll', function() {
 
     // normal blue to black
     backgroundColor = `rgb(
-        ${Math.floor(17 - 17 * scrollPercent)},
-        ${Math.floor(19 - 22 * scrollPercent)},
-        ${Math.floor(22 - 22 * scrollPercent)}
+        ${Math.floor(0 + 30 * scrollPercent)},
+        ${Math.floor(0 + 30 * scrollPercent)},
+        ${Math.floor(0 + 30 * scrollPercent)}
     )`;
 
     primaryParticleColor = '#5f82ed';
@@ -58,8 +58,8 @@ window.onload = function() {
     Particles.init({
         selector: '.background',
         connectParticles: true,
-        maxParticles: 150,
-        color: '#5f82ed',
+        maxParticles: 80,
+        color: '#0086da',
         sizeVariations: 5
     });
 };
