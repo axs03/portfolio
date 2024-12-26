@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman Sahu | Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="static/css/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+    <script src="static/js/custom_input.js"></script>
+    <script src="static/js/expand.js"></script>
+    <script src="static/js/index.js"></script>
+</head>
+<body>
+    <canvas class="background"></canvas>
+
+    <div class="container">
+        <div class="box top-side">
+            <h1 class="welcome slide-in">Aman Sahu</h1>
+            <h3>Operations Analyst & IT Student Desk Manager</h3>
+            <h3>Computer Science | Penn State University</h3>
+            
+            <p class="intro-text">
+                I'm a Computer Science student at Penn State University with a strong interest in software development, 
+                artificial intelligence, and data analytics. I am currently learning the principles and techniques about 
+                software design. My focus is on creating user-centered solutions 
+                which combine functionality and aesthetics.
+            </p>
+            <div class="button-container">
+                <button class="custom-button" onclick="scrollToContent(); loadContent('templates/projects.html')">Projects</button>
+                <button class="custom-button" onclick="scrollToContent(); loadContent('templates/resume.html')">My Resume</button>
+                <button class="custom-button" onclick="scrollToContent(); loadContent('templates/contact.html')">Contact</button>
+            </div>
+        </div>
+
+        <div class="box bottom-side" id="content-box">
+            <div id="placeholder">
+                <p>Nothing Here to see yet :)</p>
+            </div>
+            <iframe id="contentFrame" src="" frameborder="0" width="100%" height="100%" style="display: none"></iframe>
+        </div>
+    </div>
+</body>
+</html>
