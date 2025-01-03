@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <div class="details-panel" id="detailsPanel">
-            <h2 class="details-heading">Project Details</h2>
+            <h2 class="details-heading">Projects and Tools</h2>
             <div class="details-content" id="detailsContent">
                 <p>Select a project to see its details.</p>
             </div>
@@ -132,14 +132,12 @@
     </div>
     <script>
         function showDetails(item) {
-            const detailsPanel = document.getElementById('detailsPanel');
-            const detailsContent = document.getElementById('detailsContent');
-            const detailsHTML = item.querySelector('.details').innerHTML;
+            const allItems = document.querySelectorAll('.scroll-item');
+            allItems.forEach(it => it.classList.remove('expanded'));
 
-            detailsContent.innerHTML = detailsHTML;
-
-            detailsPanel.classList.add('visible');
+            item.classList.add('expanded');
         }
     </script>
+    
 </body>
 </html>
