@@ -27,7 +27,7 @@ window.onload = function() {
     Particles.init({
         selector: '.background',
         connectParticles: true,
-        maxParticles: 150,
+        maxParticles: 50,
         color: particlecolor,
         sizeVariations: 2
     });

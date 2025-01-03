@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #b3f2c4;
+    --secondary-color: #222222;
+}
+
 /* General Reset */
 * {
     scrollbar-width: thin;
-    scrollbar-color: #5f82ed #ffffff00;
+    scrollbar-color: var(--primary-color) #ffffff00;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -15,7 +22,7 @@
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: #5f82ed;
+    background-color: var(--primary-color);
     border-radius: 10px;
 }
 
@@ -78,7 +85,7 @@ html, body {
 
 .scroll-item:hover {
     transform: scale(1.02);
-    border-color: #69c3ff;
+    border-color: var(--primary-color);
 }
 
 .project-heading {

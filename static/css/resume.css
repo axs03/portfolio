@@ -1,53 +1,76 @@
-*{
-    font-family:'Courier New', Courier, monospace;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #b3f2c4;
+    --secondary-color: #222222;
 }
+
+/* General reset */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) #ffffff00;
+    font-family: 'Roboto', sans-serif;
+}
+
+*::-webkit-scrollbar {
+    width: 0px;
+}
+
+*::-webkit-scrollbar-track {
+    background: rgba(8, 18, 48, 0);
+    backdrop-filter: blur(2px);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: none;
+    color: #333;
     margin: 0;
+    padding: 20px;
 }
-
-.pdf-viewer {
-    width: 100%;
-    max-width: 800px;
-    height: 100vh;
-    background-color: #000000;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.resume-container {
+    max-width: 90%;
+    margin: 0 auto;
+    backdrop-filter: blur(10px);
+    padding: 20px;
     border-radius: 8px;
-    overflow: hidden;
 }
-
-.toolbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #0086da;
+h1 {
+    text-align: center;
     color: #ffffff;
 }
-
-.toolbar h1 {
-    font-size: 1.2rem;
-    margin: 0;
-}
-
-.download-btn {
+h2 {
     color: #ffffff;
-    background-color: #0086da;
-    padding: 8px 15px;
-    border-radius: 4px;
-    text-decoration: none;
-    transition: background-color 0.3s;
+    border-bottom: 2px solid #444;
+    padding-bottom: 5px;
 }
-
-.download-btn:hover {
-    background-color: #004494;
+.job {
+    margin-bottom: 20px;
 }
-
-.pdf-embed {
-    width: 100%;
-    height: calc(100% - 50px);
-    border: none;
+.job-title {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.job-company {
+    font-style: italic;
+    color: white;
+}
+.job-dates {
+    color: #888;
+    font-size: 0.9em;
+}
+ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+li {
+    margin-bottom: 5px;
+    color: white;
 }
