@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
-    --primary-color: #b3f2c4;
-    --secondary-color: #383838;
+    --primary-color: #9EC8B9;
+    --secondary-color: #092635;
 }
 
 body {
@@ -37,7 +37,7 @@ body {
 }
 
 #hint-above {
-    margin-top: 70px;
+    margin-top: 20px;
     color: #f7f7f7;
     display: flex;
     justify-content: center;
@@ -49,7 +49,7 @@ h1 {
     margin: 0;
     font-size: 6em;
     font-weight: 700;
-    color: white;
+    color: var(--primary-color);
 }
 
 p {

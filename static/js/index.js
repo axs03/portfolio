@@ -1,5 +1,5 @@
 var currentPageUrl = ''; // glob
-const particlecolor = '#b3f2c4'; // green
+const particlecolor = '#5C8374'; // yellowish
 
 // function loadContent(url) {
 //     var iframe = document.getElementById('contentFrame');
@@ -22,6 +22,7 @@ function loadContent(url) {
         };
     }, 200);
 }
+
 
 window.onload = function() {
     Particles.init({

@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 :root {
-    --primary-color: #b3f2c4;
-    --secondary-color: #222222;
+    --primary-color: #9EC8B9;
+    --secondary-color: #092635;
 }
 
 /* General reset */
@@ -38,7 +38,7 @@ body {
 .resume-container {
     max-width: 90%;
     margin: 0 auto;
-    backdrop-filter: blur(10px);
+    background-color: var(--secondary-color);
     padding: 20px;
     border-radius: 8px;
 }
@@ -51,7 +51,7 @@ h2 {
     border-bottom: 2px solid #444;
     padding-bottom: 5px;
 }
-.job {
+.job, .skills {
     margin-bottom: 20px;
 }
 .job-title {
@@ -73,4 +73,18 @@ ul {
 li {
     margin-bottom: 5px;
     color: white;
+    list-style-type: circle;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.skills-item {
+    background-color: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    list-style-type: none;
 }
