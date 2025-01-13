@@ -1,8 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* General reset */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) #ffffff00;
+    font-family: 'Roboto', sans-serif;
+}
+
+*::-webkit-scrollbar {
+    width: 0px;
+}
+
+*::-webkit-scrollbar-track {
+    background: rgba(8, 18, 48, 0);
+    backdrop-filter: blur(2px);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+}
+
+
 :root {
     --primary-color: #9EC8B9;
     --secondary-color: #092635;
+    --darker-green: #4c6e49;
 }
 
 * {
@@ -21,29 +44,29 @@ body {
 
 .contact-container {
     width: 100%;
-    max-width: 500px;
+    max-width: 70%;
     padding: 30px;
-    background-color: #000000;
+    backdrop-filter: blur(2px);
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .contact-container h1 {
     font-size: 2em;
     color: var(--primary-color);
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .contact-info {
     display: flex;
     flex-direction: column;
+    align-items: left;
     gap: 15px;
 }
 
 .contact-item {
     display: flex;
-    align-items: center;
     gap: 10px;
     font-size: 1.1em;
     color: #555555;
@@ -59,4 +82,108 @@ body {
     color: var(--primary-color);
     text-decoration: none;
     transition: color 0.3s;
+}
+
+/* Other stuff */
+#contactTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    margin-top: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1em;
+    border-radius: 10px; 
+}
+
+#contactDesc {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-size: 1.3em;
+    color: grey;
+}
+
+.fullName {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+.fullName input {
+    flex: 1;
+    margin: 0.5em 0;
+}
+
+
+/* for text boxes */
+input:not([type="submit"]), 
+textarea {
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0); /* only bottom border, transparent by default */
+    padding: .5em;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1em;
+    border-radius: 0;
+    background-color: transparent;
+    color: white;
+    transition: border-bottom-color 0.2s ease;
+}
+
+input:not([type="submit"]):hover,
+textarea:hover {
+    border-bottom-color: var(--darker-green);
+}
+
+/* when focused */
+input:not([type="submit"]):focus,
+textarea:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 250px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* for button */
+input[type="submit"] {
+    margin: 10px;
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    border: 0px;
+    width: 100%;
+    font-weight: 700;
+    box-shadow: 0px 0px 14px -7px #000000;
+    background-image: linear-gradient(60deg, var(--primary-color) 0%, var(--darker-green)  51%, var(--primary-color)  100%);
+    cursor: pointer;
+    touch-action: manipulation;
+}
+
+input[type="submit"]:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+input[type="submit"]:active {
+    transform: scale(0.95);
 }
