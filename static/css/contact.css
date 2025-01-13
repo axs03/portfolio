@@ -43,15 +43,25 @@ body {
 }
 
 .contact-container {
-    width: 100%;
-    max-width: 70%;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
     padding: 30px;
     backdrop-filter: blur(2px);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.contact-container h1 {
+.contact-box, .message-box {
+    width: 48%;
+    padding: 20px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: var(--primary-color);
+    backdrop-filter: blur(5px);
+}
+
+.contact-box h1, .message-box h1 {
     font-size: 2em;
     color: var(--primary-color);
     margin-bottom: 20px;
@@ -61,7 +71,7 @@ body {
 .contact-info {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start;
     gap: 15px;
 }
 
@@ -103,10 +113,11 @@ form {
 }
 
 #contactDesc {
-    margin-top: 50px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     font-size: 1.3em;
     color: grey;
+    text-align: left;
 }
 
 .fullName {

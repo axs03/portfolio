@@ -34,7 +34,7 @@
     height: 100%;
     z-index: -1;
     /* background-color: var(--secondary-color); */
-    background-color: black;
+    background-color: rgb(32, 32, 32);
 }
 
 html, body {
