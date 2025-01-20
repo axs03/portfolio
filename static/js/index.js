@@ -1,14 +1,5 @@
 var currentPageUrl = ''; // glob
-const particlecolor = '#5C8374'; // yellowish
-
-// function loadContent(url) {
-//     var iframe = document.getElementById('contentFrame');
-//     iframe.src = url;
-//     currentPageUrl = url; // curr url
-//     iframe.onload = function() {
-//         iframe.style.display = 'block';
-//     };
-// }
+const particlecolor = '#ffffff'; // yellowish
 
 function loadContent(url) {
     var iframe = document.getElementById('contentFrame');
@@ -26,9 +17,9 @@ function loadContent(url) {
 
 window.onload = function() {
     Particles.init({
-        selector: '.background',
+        selector: '#background',
         connectParticles: true,
-        maxParticles: 50,
+        maxParticles: 70,
         color: particlecolor,
         sizeVariations: 2
     });

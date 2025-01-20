@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('./main_colors.css');
 
-:root {
-    --primary-color: #9EC8B9;
-    --secondary-color: #092635;
-}
 
 /* General reset */
 * {
     scrollbar-width: none;
     scrollbar-color: #0086da #ffffff00;
-    font-family: 'SF Mono', 'Roboto', -apple-system, 'Courier New', Courier;
+    font-family: 'SF Mono', 'Roboto', -apple-system;
 }
 
 *::-webkit-scrollbar {
@@ -26,15 +23,15 @@
     border-radius: 10px;
 }
 
-.background {
+#background {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
-    /* background-color: var(--secondary-color); */
-    background-color: rgb(32, 32, 32);
+    background-color: var(--secondary-color);
+    filter: blur(8px);
 }
 
 html, body {
@@ -49,7 +46,7 @@ body {
     min-height: 100vh;
     margin: 0;
     font-family: 'SF Pro', sans-serif;
-    background-color: none;
+    background-color: var(--secondary-color);
 }
 
 header {
@@ -62,8 +59,6 @@ header {
 
 .navbar {
     width: 100%;
-    /* background-color:rgba(56, 56, 56, 0.8); */
-    backdrop-filter: blur(10px);
     padding: 10px 0;
     display: flex;
     justify-content: center;
@@ -76,6 +71,8 @@ header {
 .custom-button {
     padding: 10px 20px;
     font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 200;
     color: #fff;
     background-color: transparent;
     border-bottom: 1px solid transparent;

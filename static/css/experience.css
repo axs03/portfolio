@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-:root {
-    --primary-color: #9EC8B9;
-    --secondary-color: #092635;
-}
+@import url('./main_colors.css');
 
 /* General reset */
 * {
@@ -47,10 +43,8 @@ body {
 .box {
     width: 80%;
     padding: 20px 20px 20px 30px;
-    border: 1px solid #ccc;
     border-radius: 10px;
     background-color: transparent;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
@@ -80,7 +74,6 @@ h2 {
     border-left: 1px solid #ccc;
 }
 
-
 .job, .skills {
     margin-bottom: 20px;
 }
@@ -92,6 +85,10 @@ h2 {
 
 .job-company {
     font-style: italic;
+    color: white;
+}
+
+.job-company a {
     color: white;
 }
 

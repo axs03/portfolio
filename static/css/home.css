@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('./main_colors.css');
 
-:root {
-    --primary-color: #9EC8B9;
-    --secondary-color: #092635;
-}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -15,7 +12,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 100vh;
     text-align: left;
 }
 
@@ -24,12 +21,19 @@ body {
     flex-direction: column;
     height: 80%;
     width: 80%;
-    margin-left: 20px;
-    margin-top: 200px;
+}
+
+.container button {
+    width: fit-content;
+    margin-top: 20px;
 }
 
 .top {
     text-align: left;
+}
+
+#name {
+    animation: fadeIn 2s ease;
 }
 
 .bottom {
@@ -55,4 +59,44 @@ p {
     margin: 10px 0;
     color: grey;
     font-size: 2em;
+}
+
+button.download-resume {
+    margin: 10px;
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: black;
+    border-radius: 10px;
+    display: block;
+    border: 0px;
+    font-weight: 600;
+    box-shadow: 0px 0px 14px -7px #000000;
+    background-image: linear-gradient(60deg, var(--primary-color) 0%, var(--darker)  51%, var(--primary-color)  100%);
+    cursor: pointer;
+    touch-action: manipulation;
+    animation: fadeIn 2s ease;
+}
+
+button.download-resume:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+button.download-resume:active {
+    transform: scale(0.95);
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }

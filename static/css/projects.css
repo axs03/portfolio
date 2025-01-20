@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('./main_colors.css');
 
-:root {
-    --primary-color: #b3f2c4;
-    --secondary-color: #222222;
-}
 
 /* General Reset */
 * {
