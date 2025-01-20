@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('./main_colors.css');
 
-:root {
-    --primary-color: #b3f2c4;
-    --secondary-color: #222222;
-}
 
 /* General Reset */
 * {
@@ -77,7 +74,7 @@ html, body {
     padding: 15px;
     backdrop-filter: blur(2px);
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 2s ease;
     position: relative;
     overflow: hidden;
 }
