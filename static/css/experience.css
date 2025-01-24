@@ -88,8 +88,18 @@ h2 {
     color: white;
 }
 
-.job-company a {
+.job-right a {
     color: white;
+    transition: all 0.4s;
+    text-decoration: none;
+}
+
+.job-right a:hover {
+    color: var(--primary-color);
+}
+
+.job-right p {
+    color: grey;
 }
 
 .job-dates {
