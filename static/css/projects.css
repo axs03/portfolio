@@ -69,19 +69,22 @@ html, body {
 }
 
 .scroll-item {
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     border-radius: 8px;
     padding: 15px;
     backdrop-filter: blur(2px);
     cursor: pointer;
-    transition: all 2s ease;
+    transition: all 0.5s ease;
     position: relative;
     overflow: hidden;
+    background-size: 200% auto;
+    background-image: linear-gradient(90deg, rgb(17, 17, 17) 0%, black 30%, rgb(17, 17, 17) 50%, black  100%);
 }
 
 .scroll-item:hover {
     transform: scale(1.02);
     border-color: var(--primary-color);
+    background-position: right center;
 }
 
 .scroll-item.expanded {

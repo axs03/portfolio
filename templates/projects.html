@@ -10,11 +10,8 @@
     <div class="container">
         <div class="details-panel" id="detailsPanel">
             <h2 class="details-heading">Projects and Tools</h2>
-            <div class="details-content" id="detailsContent">
-                <p>Select a project to see its details.</p>
-            </div>
         </div>
-        <div class="scrollable-list">
+        <!-- <div class="scrollable-list">
             <div class="scroll-item" onclick="showDetails(this)">
                 <h2 class="project-heading">SeamlessM4tv2-API</h2>
                 <div class="summary">
@@ -128,16 +125,13 @@
                 </div>
             </div>
             
-        </div>
-    </div>
-    <script>
-        function showDetails(item) {
-            const allItems = document.querySelectorAll('.scroll-item');
-            allItems.forEach(it => it.classList.remove('expanded'));
+        </div> -->
 
-            item.classList.add('expanded');
-        }
-    </script>
-    
+        <div class="scrollable-list" id="projectsList">
+
+        </div>
+
+    </div>
+    <script src="../static/js/projects.js"></script>
 </body>
 </html>

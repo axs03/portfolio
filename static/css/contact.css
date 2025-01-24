@@ -87,14 +87,16 @@ body {
     align-items: center;
     gap: 10px;
     padding: 50px;
-    color: #555555;
     border: 2px solid var(--darker-beige);
     border-radius: 10px;
-    transition: all 1s ease;
+    transition: 0.5s;
+    background-size: 200% auto;
+    background-image: linear-gradient(90deg, rgb(17, 17, 17) 0%, black 30%, rgb(17, 17, 17) 50%, black  100%);
 }
 
 .contact-item:hover {
     transform: scale(1.02);
+    background-position: right center;
 }
 
 .contact-item i {
