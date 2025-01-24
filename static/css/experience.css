@@ -46,10 +46,11 @@ body {
     border-radius: 10px;
     transition: 0.5s;
     background-size: 200% auto;
-    background-image: linear-gradient(30deg, black 0%, rgb(27, 27, 27)  50%, black  100%);
+    background-image: linear-gradient(90deg, black 0%, rgb(17, 17, 17) 11%, black 30%, rgb(17, 17, 17) 50%, black  100%);
 }
 
 .box:hover {
+    transform: scale(1.02);
     background-position: right center;
 }
 
@@ -96,7 +97,7 @@ h2 {
 
 .job-right a {
     color: white;
-    transition: all 0.4s;
+    transition: all 0.5s;
     text-decoration: none;
 }
 
