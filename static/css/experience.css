@@ -44,7 +44,13 @@ body {
     width: 80%;
     padding: 20px 20px 20px 30px;
     border-radius: 10px;
-    background-color: transparent;
+    transition: 0.5s;
+    background-size: 200% auto;
+    background-image: linear-gradient(30deg, black 0%, rgb(27, 27, 27)  50%, black  100%);
+}
+
+.box:hover {
+    background-position: right center;
 }
 
 h1 {
@@ -99,7 +105,7 @@ h2 {
 }
 
 .job-right p {
-    color: grey;
+    color: rgb(182, 182, 182);
 }
 
 .job-dates {
