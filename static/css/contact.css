@@ -50,13 +50,18 @@ body {
 .contact-box, .message-box {
     flex: 1;
     padding: 20px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     border-width: 2px;
     border-color: var(--primary-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#divider {
+    border: 1px solid grey;
+    margin: 20px 0;
 }
 
 .contact-box h1, .message-box h1 {
