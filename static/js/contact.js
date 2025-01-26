@@ -10,7 +10,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     .then(response => response.json())
     .then(data => {
         if (data.status === 'success') {
-            alert('Message sent successfully!.');
+            alert('Message sent successfully!');
             window.location.href = 'contact.html'; // reloads to contact page
         } else {
             alert('Error: ' + data.message);
