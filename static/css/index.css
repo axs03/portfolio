@@ -1,122 +1,155 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('./main_colors.css');
 
-
 /* General reset */
 * {
-    scrollbar-width: none;
-    scrollbar-color: #0086da #ffffff00;
-    font-family: 'SF Mono', 'Roboto', -apple-system;
+  scrollbar-width: none;
+  scrollbar-color: #0086da #ffffff00;
+  font-family: 'SF Mono', 'Roboto', -apple-system;
 }
 
 *::-webkit-scrollbar {
-    width: 5px;
+  width: 5px;
 }
 
 *::-webkit-scrollbar-track {
-    background: transparent;
-    backdrop-filter: blur(2px);
+  background: transparent;
+  backdrop-filter: blur(2px);
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: #0086da;
-    border-radius: 10px;
+  background-color: #0086da;
+  border-radius: 10px;
 }
 
 #background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-color: var(--secondary-color);
-    filter: blur(8px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: var(--secondary-color);
+  filter: blur(8px);
 }
 
 html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    font-family: 'SF Pro', sans-serif;
-    background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'SF Pro', sans-serif;
+  background-color: var(--secondary-color);
 }
 
 header {
-    background-color: none;
-    color: rgb(117, 116, 116);
-    text-align: center;
-    padding: 10px 0;
+  background-color: transparent;
+  text-align: center;
+  padding: 10px 0;
 }
 
-.navbar {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-    max-height: fit-content;
+.hamburger-menu {
+  display: none;
+  font-size: 1.3em;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-height: fit-content;
+}
+
+.navbar-links.active {
+  display: block;
 }
 
 .custom-button {
-    padding: 10px;
-    font-size: 1em;
-    text-transform: uppercase;
-    font-weight: 200;
-    color: #fff;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    width: fit-content;
+  padding: 10px;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 200;
+  color: #fff;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: fit-content;
 }
 
 .custom-button p {
-    margin: 0;
-    border-bottom: 1px solid transparent;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    transition: border-bottom 0.3s ease;
-    width: fit-content;
+  margin: 0;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.3s ease;
+  width: fit-content;
 }
 
 .custom-button p:hover {
-    border-bottom: 1px solid var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: calc(100% - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 60px);
 }
 
 #contentFrame {
-    width: 100%;
-    height: 100%;
-    border: none;
-    opacity: 1;
-    transition: opacity 0.1s;
+  width: 100%;
+  height: 100%;
+  border: none;
+  opacity: 1;
+  transition: opacity 0.1s;
 }
 
-/* Mobile styles */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: row;
-        align-items: center;
-        gap: 10px;
-    }
 
-    .custom-button {
-        width: auto;
-        text-align: center;
-        padding: 15px;
-        margin: 5px 0;
-    }
+@media (max-width: 768px) {
+  header {
+    /* position: relative; */
+    background-color: none;
+    color: #fff;
+    transition: height 0.3s ease;
+    height: 30px;
+  }
+
+  header.expanded {
+    height: 200px;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: row;
+  }
+
+  header.expanded .navbar-links {
+    display: block;
+    flex-direction: row;
+  }
+
+  .hamburger-menu {
+    display: block;
+    margin: 0 auto;
+  }
+
+  header.expanded .hamburger-menu {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .custom-button {
+    width: auto;
+    text-align: center;
+    padding: 15px;
+    margin: 5px 0;
+  }
 }
