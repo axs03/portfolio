@@ -135,3 +135,19 @@ li {
 .skills-item {
     margin: 5px 0;
 }
+
+@media (max-width: 768px) {
+    .box {
+        background: black;
+    }
+
+    .job-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .job-right {
+        border-top: 1px solid #ccc;
+        border-left: none;
+    }
+}

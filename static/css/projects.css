@@ -111,11 +111,11 @@ html, body {
 .details p a {
     color: var(--primary-color);
     text-decoration: none;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
 }
 
 .details p a:hover {
-    color: var(--secondary-color);
+    color: var(--darker);
     text-decoration: underline;
 }
 
@@ -174,4 +174,21 @@ html, body {
 .php-tag {
     background-color: #65008d;
     color: #b86dff;
+}
+
+@media (max-width: 768px) {
+    .scrollable-list {
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        max-height: 100vh;
+    }
+    .scrollable-list > * {
+        display: block;
+        width: auto;
+    }
+    .scrollable-list > * {
+        max-height: none;
+        overflow: visible;
+    }
 }
