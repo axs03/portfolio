@@ -14,6 +14,17 @@ function loadContent(url) {
     }, 200);
 }
 
+// for hamburger menu
+function toggleMenu() {
+    // For mobile screens, toggle the 'expanded' class on the header
+    if (window.innerWidth <= 768) {
+      document.querySelector('header').classList.toggle('expanded');
+    } else {
+
+      const navbarLinks = document.querySelector('.navbar-links');
+      navbarLinks.classList.toggle('active');
+    }
+  }
 
 window.onload = function() {
     Particles.init({

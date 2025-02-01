@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aman Sahu | Portfolio</title>
+    <title>Aman Sahu Portfolio</title>
     <link rel="stylesheet" type="text/css" href="./static/css/index.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
     <script src="./static/js/index.js"></script>
 </head>
 <body>
     <canvas id="background"></canvas>
-    <header>
-        <nav class="navbar">
+    <header id="header">
+        <nav class="navbar-links">
             <button class="custom-button" onclick="loadContent('./templates/home.html')"><p>Home</p></button>
             <button class="custom-button" onclick="loadContent('./templates/experience.html')"><p>Experience</p></button>
             <button class="custom-button" onclick="loadContent('./templates/projects.html')"><p>Projects</p></button>
             <button class="custom-button" onclick="loadContent('./templates/contact.html')"><p>Contact</p></button>
         </nav>
+        <button class="hamburger-menu" onclick="toggleMenu()">☰</button>
     </header>
     <main>
         <iframe id="contentFrame" src="./templates/home.html" frameborder="0"></iframe>

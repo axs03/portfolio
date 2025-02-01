@@ -46,7 +46,7 @@ body {
     border-radius: 10px;
     transition: 0.5s;
     background-size: 200% auto;
-    background-image: linear-gradient(90deg, black 0%, rgb(17, 17, 17) 11%, black 30%, rgb(17, 17, 17) 50%, black  100%);
+    background-image: linear-gradient(90deg, var(--secondary-color) 0%, rgba(var(--shine), 0.1) 12%, var(--secondary-color) 30%, rgba(var(--shine), 0.1) 50%, var(--secondary-color)  100%);
 }
 
 .box:hover {
