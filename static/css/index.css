@@ -50,12 +50,11 @@ body {
 header {
   background-color: transparent;
   text-align: center;
-  padding: 10px 0;
 }
 
 .hamburger-menu {
   display: none;
-  font-size: 1.3em;
+  font-size: 1.7em;
   background: none;
   border: none;
   color: white;
@@ -63,10 +62,10 @@ header {
 }
 
 .navbar-links {
+  margin-top: 10px;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
+  gap: 70px;
   max-height: fit-content;
 }
 
@@ -90,7 +89,6 @@ header {
   margin: 0;
   border-bottom: 1px solid transparent;
   transition: border-bottom 0.3s ease;
-  width: fit-content;
 }
 
 .custom-button p:hover {
@@ -115,24 +113,30 @@ main {
 
 @media (max-width: 768px) {
   header {
-    /* position: relative; */
+    position: relative;
     background-color: none;
     color: #fff;
-    transition: height 0.3s ease;
+    transition: height 0.5s ease;
     height: 30px;
   }
 
   header.expanded {
-    height: 200px;
+    height: 160px;
   }
 
   .navbar-links {
-    display: none;
-    flex-direction: row;
+    margin-top: 0px;
+    flex-wrap: wrap;
+    gap: 10px;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 1s ease, max-height 0.5s ease;
   }
 
   header.expanded .navbar-links {
-    display: block;
+    opacity: 1;
+    max-height: 200px;
     flex-direction: row;
   }
 
@@ -147,9 +151,13 @@ main {
   }
 
   .custom-button {
-    width: auto;
+    width: fit-content;
     text-align: center;
-    padding: 15px;
-    margin: 5px 0;
+  }
+
+  .custom-button p {
+    text-align: center;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
   }
 }
