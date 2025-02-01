@@ -175,3 +175,12 @@ html, body {
     background-color: #65008d;
     color: #b86dff;
 }
+
+@media (max-width: 768px) {
+    .box-container {
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        max-height: 100vh;
+    }
+}

@@ -104,3 +104,21 @@ button.download-resume:active {
         opacity: 1;
     }
 }
+
+@media (max-width: 768px) {
+    body {
+        height: 100%;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    .bottom {
+        font-size: 0.8em;
+    }
+
+    #hint-above {
+        font-size: 1em;
+    }
+}
