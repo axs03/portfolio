@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aman Sahu Portfolio</title>
+    <title>Aman Sahu's Portfolio Website</title>
+    <meta name="description" content="The official website of Aman Sahu, a sofwtare developer experienced with Python and other languages">
     <link rel="stylesheet" type="text/css" href="./static/css/index.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
@@ -13,15 +14,18 @@
     <canvas id="background"></canvas>
     <header id="header">
         <nav class="navbar-links">
-            <button class="custom-button" onclick="loadContent('./templates/home.html')"><p>Home</p></button>
-            <button class="custom-button" onclick="loadContent('./templates/experience.html')"><p>Experience</p></button>
-            <button class="custom-button" onclick="loadContent('./templates/projects.html')"><p>Projects</p></button>
-            <button class="custom-button" onclick="loadContent('./templates/contact.html')"><p>Contact</p></button>
+            <button class="custom-button" onclick="scrollToSection('home')"><p>Home</p></button>
+            <button class="custom-button" onclick="scrollToSection('projects')"><p>Projects</p></button>
+            <button class="custom-button" onclick="scrollToSection('contact')"><p>Contact</p></button>
         </nav>
         <button class="hamburger-menu" onclick="toggleMenu()">☰</button>
     </header>
     <main>
-        <iframe id="contentFrame" src="./templates/home.html" frameborder="0"></iframe>
+        <section id="home" class="container"></section>
+        <section id="projects"></section>
+        <section id="contact">
+            <div class="contact-container"></div>
+        </section>
     </main>
 </body>
 </html>

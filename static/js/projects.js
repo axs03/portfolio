@@ -40,15 +40,18 @@ async function fetchGitHubProjects() {
 }
 
 function showDetails(element) {
-    const detailsContent = document.getElementById('detailsContent');
+    const detailsPanel = document.getElementById('detailsPanel');
     const allItems = document.querySelectorAll('.scroll-item');
-    
+
     allItems.forEach(item => {
         item.classList.remove('expanded');
     });
 
     element.classList.add('expanded');
-    detailsContent.innerHTML = element.querySelector('.details').innerHTML;
+
+    const details = element.querySelector('.details')?.innerHTML || '';
+
+    detailsPanel.innerHTML = details;
 }
 
 window.onload = fetchGitHubProjects;
