@@ -16,11 +16,11 @@
 /* Scrollbar styling */
 * {
   scrollbar-width: thin;
-  scrollbar-color: var(--secondary-color) transparent;
+  scrollbar-color: var(--primary-color) transparent;
 }
 
 *::-webkit-scrollbar {
-  width: 0px;
+  width: 5px;
 }
 
 *::-webkit-scrollbar-track {
@@ -28,7 +28,7 @@
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--primary-color);
+  background-color: transparent;
   border-radius: 10px;
 }
 
@@ -62,7 +62,7 @@ header {
   background-color: transparent;
   text-align: center;
   padding: 10px;
-  height: fit-content;
+  max-height: fit-content;
 }
 
 .navbar-links {

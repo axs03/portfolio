@@ -1,16 +1,17 @@
-/* :root {
-    --primary-color: #ff5667;
-    --secondary-color: #272727;
-    --darker: #a53195;
-    --shine: 255, 255, 255;
-} */
-
 :root {
+    --primary-color: #ff5667;
+    --secondary-color: #181818;
+    --third-bg-color: #3f3f3f;
+    --darker: #8031a5;
+    --shine: 255, 255, 255;
+}
+
+/* :root {
     --primary-color: #0E8388;
     --secondary-color: #2C3333;
     --darker: #2E4F4F;
     --shine: 255, 255, 255;
-}
+} */
 
 /* :root {
     --primary-color: #0E8388;
