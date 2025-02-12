@@ -10,12 +10,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.top-panel p {
-    display: flex;
-    justify-content: center;
-    color: rgb(65, 65, 65);
-}
-
 .proj-container {
     min-height: fit-content;
     display: flex;
@@ -26,7 +20,15 @@
 .main-heading {
     color: var(--primary-color);
     text-align: center;
-    padding: 30px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.top-panel p {
+    display: flex;
+    justify-content: center;
+    color: rgb(129, 129, 129);
+    margin-bottom: 50px;
 }
 
 .scrollable-list {
@@ -36,18 +38,19 @@
     padding: 20px;
     width: 100%;
     justify-content: center;
+    margin-bottom: 50px;
 }
 .project-item {
     flex: 1 1 calc(30% - 50px);
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 0px 7px rgba(0, 0, 0, 0.3);
     transition: box-shadow 0.3s ease;
-    max-width: 50%;
-    height: 100%;
+    max-width: 30%;
+    min-height: 100%;
     gap: 12px;
 }
 
@@ -62,7 +65,7 @@
 .project-title,
 .project-details {
     flex: 1;
-    padding: 10px;
+    margin-top: 10px;
 }
 
 .project-title {
@@ -76,13 +79,14 @@
 
 .project-details {
     text-align: left;
-    color: white;
+    color: rgb(122, 122, 122);
 }
 
 .project-title a {
     text-decoration: none;
     color: var(--primary-color);
     font-weight: bold;
+    width: fit-content;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
@@ -99,7 +103,7 @@
     margin-bottom: 8px;
 }
 
-.python-tag, .docker-tag, .aws-tag, .swift-tag, .java-tag, .php-tag {
+.python-tag, .docker-tag, .aws-tag, .swift-tag, .java-tag, .php-tag, .javascript-tag {
     padding: 4px 8px;
     border-radius: 5px;
     font-size: 0.8rem;
@@ -108,7 +112,7 @@
 }
 
 .python-tag {
-    background-color: #ffe260;
+    background-color: #ffd620;
     color: #005ce6;
 }
 
@@ -125,6 +129,11 @@
 .java-tag {
     background-color: #a85f00;
     color: #ffd900;
+}
+
+.javascript-tag {
+    background-color: #fdff78;
+    color: #000000;
 }
 
 .swift-tag {

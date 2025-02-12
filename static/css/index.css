@@ -15,7 +15,7 @@
 
 /* Scrollbar styling */
 * {
-  scrollbar-width: thin;
+  scrollbar-width: none; /* thin */
   scrollbar-color: var(--primary-color) transparent;
 }
 

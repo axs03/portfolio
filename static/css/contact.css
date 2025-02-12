@@ -3,7 +3,7 @@
 
 /* General reset */
 * {
-    scrollbar-width: thin;
+    scrollbar-width: none;
     scrollbar-color: var(--primary-color) #ffffff00;
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
@@ -15,11 +15,11 @@
     display: flex;
     justify-content: center;
     align-items: stretch;
-    padding: 30px;
+    /* padding: 30px; */
     border-radius: 10px;
     gap: 20px;
     width: 100%;
-    height: 95vh;
+    height: 80vh;
 }
 
 .contact-box, .message-box {
@@ -34,8 +34,8 @@
 }
 
 #divider {
-    border: 1px solid grey;
-    margin: 20px 0;
+    border: 1px solid rgb(49, 49, 49);
+    margin: 10px 0;
 }
 
 .contact-box h1, .message-box h1 {
@@ -197,5 +197,6 @@ input[type="submit"]:active {
     .contact-container {
         display: flex;
         flex-direction: column;
+        height: auto;
     }
 }

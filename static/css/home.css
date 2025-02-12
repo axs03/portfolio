@@ -97,13 +97,13 @@ button.download-resume:active {
         opacity: 0;
     }
     10% {
-        opacity: 0.8;
+        opacity: 0.4;
     }
     20% {
-        opacity: 0.6;
+        opacity: 0.3;
     }
     30% {
-        opacity: 0.7;
+        opacity: 0.5;
     }
     40% {
         opacity: 0.6;
