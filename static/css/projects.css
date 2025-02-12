@@ -10,24 +10,36 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.top-panel p {
+    display: flex;
+    justify-content: center;
+    color: rgb(65, 65, 65);
+}
+
 .proj-container {
-    min-height: 100vh;
+    min-height: fit-content;
     display: flex;
     flex-direction: column;
     background-color: #212124;
 }
 
-.scrollable-list {
-    display: flex;
-    flex-direction: row;
-    gap: 70px;
-    padding: 20px;
-    overflow-y: auto;
-    width: 100%;
+.main-heading {
+    color: var(--primary-color);
+    text-align: center;
+    padding: 30px;
 }
 
-.project-item {
+.scrollable-list {
     display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    padding: 20px;
+    width: 100%;
+    justify-content: center;
+}
+.project-item {
+    flex: 1 1 calc(30% - 50px);
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 15px;
@@ -36,15 +48,16 @@
     transition: box-shadow 0.3s ease;
     max-width: 50%;
     height: 100%;
+    gap: 12px;
 }
 
 .project-item:hover {
     box-shadow: 0 0px 12px rgba(114, 114, 114, 0.55);
 }
 
-.project-item--reverse {
-    flex-direction: row-reverse;
-}
+/* .project-item--reverse {
+    flex-direction: c-reverse;
+} */
 
 .project-title,
 .project-details {
@@ -53,19 +66,37 @@
 }
 
 .project-title {
-    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
     color: white;
 }
 
 .project-details {
-    text-align: right;
+    text-align: left;
     color: white;
+}
+
+.project-title a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.project-title a:hover {
+    color: var(--darker);
+    transform: scale(1.05);
 }
 
 .tags {
     display: flex;
-    gap: 8px;
+    justify-content: center;
+    gap: 12px;
     margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .python-tag, .docker-tag, .aws-tag, .swift-tag, .java-tag, .php-tag {
@@ -97,7 +128,7 @@
 }
 
 .swift-tag {
-    background-color: #ffae00;
+    background-color: #c78800;
     color: #ffffff;
 }
 
@@ -107,18 +138,7 @@
 }
 
 @media (max-width: 768px) {
-    .scrollable-list {
-        display: flex;
-        flex-direction: column;
-        overflow-y: auto;
-        max-height: 100vh;
-    }
-    .scrollable-list > * {
-        display: block;
-        width: auto;
-    }
-    .scrollable-list > * {
-        max-height: none;
-        overflow: visible;
+    .project-item {
+        flex: 1 1 100%;
     }
 }
