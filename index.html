@@ -16,13 +16,17 @@
         <nav class="navbar-links">
             <button class="custom-button" onclick="scrollToSection('home')"><p>Home</p></button>
             <button class="custom-button" onclick="scrollToSection('projects')"><p>Projects</p></button>
+            <button class="custom-button" onclick="scrollToSection('experience')"><p>Experience</p></button>
             <button class="custom-button" onclick="scrollToSection('contact')"><p>Contact</p></button>
         </nav>
-        <button class="hamburger-menu" onclick="toggleMenu()">☰</button>
+        <button class="hamburger-menu" onclick="toggleMenu()">
+            <i class="fas fa-chevron-down"></i>
+        </button>
     </header>
     <main>
         <section id="home" class="container"></section>
         <section id="projects"></section>
+        <section id="experience"></section>
         <section id="contact">
             <div class="contact-container"></div>
         </section>

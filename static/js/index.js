@@ -47,15 +47,22 @@ function loadSectionContent(sectionId, url) {
 
 // for hamburger menu
 function toggleMenu() {
-    // For mobile screens, toggle the 'expanded' class on the header
-    if (window.innerWidth <= 768) {
-      document.querySelector('header').classList.toggle('expanded');
-    } else {
-
+  if (window.innerWidth <= 768) {
+      const header = document.querySelector('header');
+      const menuButton = document.querySelector('.hamburger-menu');
+      header.classList.toggle('expanded');
+      if (header.classList.contains('expanded')) {
+          // Set icon to arrow up when menu is open
+          menuButton.innerHTML = '<i class="fas fa-chevron-up"></i>';
+      } else {
+          // Set icon to down arrow when menu is closed
+          menuButton.innerHTML = '<i class="fas fa-chevron-down"></i>';
+      }
+  } else {
       const navbarLinks = document.querySelector('.navbar-links');
       navbarLinks.classList.toggle('active');
-    }
   }
+}
 
 window.onload = function() {
     Particles.init({
@@ -68,5 +75,6 @@ window.onload = function() {
 
     loadSectionContent('home', './templates/home.html');
     loadSectionContent('projects', './templates/projects.html');
+    loadSectionContent('experience', './templates/experience.html');
     loadSectionContent('contact', './templates/contact.html');
 };

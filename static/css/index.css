@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('./main_colors.css');
 @import url("./contact.css");
+@import url("./experience.css");
 @import url("./home.css");
 @import url("./projects.css");
 
@@ -111,6 +112,19 @@ main {
 
 section {
   height: fit-content;
+  margin-bottom: 10em;
+}
+
+#projects, #experience {
+  background-color: #212124;
+}
+
+#experience {
+  margin-bottom: 10em;
+}
+
+#contact {
+  margin-bottom: 0em;
 }
 
 /* Responsive styling */
@@ -142,7 +156,12 @@ section {
   
   .hamburger-menu {
     display: block;
+    height: 15px;
     margin: 0 auto;
+  }
+
+  header.expanded .hamburger-menu i {
+    transform: rotate(180deg);
   }
   
   .custom-button {
