@@ -7,131 +7,119 @@
     <link rel="stylesheet" type="text/css" href="../static/css/projects.css"/>
 </head>
 <body>
-    <div class="container">
-        <div class="details-panel" id="detailsPanel">
-            <h2 class="details-heading">Projects and Tools</h2>
+    <div class="proj-container">
+        <div class="top-panel">
+            <h2 class="main-heading">My Projects and Tools</h2>
+            <p>Click on the GitHub icon for the Source Code!</p>
         </div>
-        <!-- <div class="scrollable-list">
-            <div class="scroll-item" onclick="showDetails(this)">
-                <h2 class="project-heading">SeamlessM4tv2-API</h2>
-                <div class="summary">
-                    <p>Deployable containerized endpoints for Meta's SeamlessM4t-v2 model</p>
-                </div>
-                <div class="details">
-                    <div class="tags"> 
-                        <div class="python-tag">Python</div>
-                    </div>
-                    <p>Custom API endpoints for generating text-to-speech and speech-to-speech translation audio files, ready for deployment.</p>
-                    <p><a href="https://github.com/as9219/SeamlessM4Tv2-API" target="_blank">Source Code</a></p>
-                </div>
-            </div>
-
-            <div class="scroll-item" onclick="showDetails(this)">
-                <h2 class="project-heading">Lab Access System</h2>
-                <div class="summary">
-                    <p>CRUD Operations for a card access system</p>
-                </div>
-                <div class="details">
-                    <div class="tags"> 
-                        <div class="python-tag">Python</div>
-                    </div>
-                        <p>This class project showcases CRUD Operations and a GUI Interface using the PyQt5 module.
-                            The database used for this project was firebase exported into a JSON file under the database folder.</p>
-                    <p><a href="https://github.com/as9219/Lab-Access-System" target="_blank">Source Code</a></p>
-                </div>
-            </div>
-    
-            <div class="scroll-item" onclick="showDetails(this)">
-                <h2 class="project-heading">Book Inventory System</h2>
-                <div class="summary">
-                    <p>CRUD Operations for a Book Inventory System</p>
-                </div>
-                <div class="details">
-                    <div class="tags"> 
-                        <div class="php-tag">PHP</div>
-                    </div>
-                        <p>This project is done with PHP, HTML, and CSS for a class homework project. 
-                            The main purpose was to showcase our understanding of Create, Read, Update, and Delete operations.</p>
-                    <p><a href="https://github.com/as9219/Book-Inventory-System" target="_blank">Source Code</a></p>
-                </div>
-    
-            </div>
-    
-            <div class="scroll-item" onclick="showDetails(this)">
-                <h2 class="project-heading">Desktop Financing Application</h2>
-                <div class="summary">
-                    <p>CMPSC Capstone Project -- Accounting Program</p>
-                </div>
-                <div class="details">
-                    <div class="tags"> 
-                        <div class="java-tag">Java</div>
-                    </div>
-                        <p>It’s known how important documentation and economics are to companies in the real-world. 
-                            How this connects to computer science is through software for internal financing. 
-                            Software tends to be more secure, fast, and available than paper. 
-                            Our aim for this app will allow a company to efficiently manage budget, expenses, income, 
-                            payables/receivables, cash flow, taxes, audits and other document handling matters such as 
-                            Profit/Loss statements. We will be working with an external database to store files (PDF statements) 
-                            and other confidential information like login information and user information.</p>
-    
-                    <p><a href="https://github.com/as9219/AccountingCapstone" target="_blank">Source Code</a></p>
-                </div>
-    
-            </div>
-    
-            <div class="scroll-item" onclick="showDetails(this)">
-                <h2 class="project-heading">Communicator.AI</h2>
-                <div class="summary">
-                    <p>Mobile Application aimed for streamlining interlanguage communcation between doctors and patients</p>
-                </div>
-                <div class="details">
-                    <div class="tags"> 
-                        <div class="swift-tag">SwiftUI</div>
-                        <div class="docker-tag">Docker</div>
-                        <div class="aws-tag">AWS</div>
-                    </div>
-                        <p>Communcator.AI is an iOS developed application which aims to bridge the language barrier between doctors and
-                            non-English speaking pateints. Combining the power of Meta's SeamlessM4t-v2 NLP model, we leveraged the power of
-                            portability of our phones to help doctors make better predictions and prevent misdiagnosis, and be easily accessible
-                            for doctors worldwide. </p>
-                </div>
-            </div>
-    
-            <div class="scroll-item" onclick="showDetails(this)">
-                <h2 class="project-heading">docs?.AI</h2>
-                <div class="summary">
-                    <p>RAG enabled chatbot able to answer quesstions about module documentation.</p>
-                </div>
-                <div class="details">
-                    <div class="tags"> 
-                        <div class="python-tag">Python</div>
-                        <div class="docker-tag">Docker</div>
-                        <div class="aws-tag">AWS</div>
-                    </div>
-                        <p>Coming Soon!</p>
-                </div>
-            </div>
-    
-            <div class="scroll-item" onclick="showDetails(this)">
-                <h2 class="project-heading">Daily Reminders</h2>
-                <div class="summary">
-                    <p>Simple automation script for morning reminders.</p>
-                </div>
-                <div class="details">
-                    <div class="tags"> 
-                        <div class="python-tag">Python</div>
-                    </div>
-                        <p>Coming Soon!</p>
-                </div>
-            </div>
-            
-        </div> -->
-
         <div class="scrollable-list" id="projectsList">
-            <!-- Dynamic -->
-        </div>
+            <div class="project-item project-item">
+                <div class="project-title">
+                    <h3>SeamlessM4Tv2 Appllication Endpoints</h3>
+                    <a href="https://github.com/axs03/SeamlessM4Tv2-API" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <div class="tags">
+                    <span class="python-tag">Python</span>
+                    <span class="docker-tag">Docker</span>
+                </div>
+                <div class="project-details">
+                    <p>Docker containerized deployable API endpoints 
+                        for the SeamlessM4Tv2 model generating text-to-speech 
+                        and speech-to-speech translation audio files.
+                    </p>
+                    
+                </div>
+            </div>
 
+            <div class="project-item project-item">
+                <div class="project-title">
+                    
+                    <h3>ViT-Training</h3>
+                    <a href="https://github.com/axs03/ViT-Training" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <div class="tags">
+                    <span class="python-tag">Python</span>
+                </div>
+                <div class="project-details">
+                    <p>Training Vision Transformer Image Classification 
+                        model on multiple example datasets</p>
+                </div>
+            </div>
+
+            <div class="project-item project-item">
+                <div class="project-title">
+                    
+                    <h3>AI Algorithms</h3>
+                    <a href="https://github.com/axs03/AI-Algorithms" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <div class="tags">
+                    <span class="python-tag">Python</span>
+                </div>
+                <div class="project-details">
+                    <p>Search Algorithms used within the field of Artificial 
+                        Intelligence</p>
+                </div>
+            </div>
+
+            <div class="project-item project-item">
+                <div class="project-title">
+                    <h3>discbot-X</h3>
+                    <a href="https://github.com/axs03/discbot-X" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <div class="tags">
+                    <span class="javascript-tag">JavaScript</span>
+                </div>
+                <div class="project-details">
+                    <p>Discord Bot created using discord.js</p>
+                </div>
+            </div>
+
+            <div class="project-item project-item">
+                <div class="project-title">
+                    <h3>Communicator.AI</h3>
+                    <a href="https://github.com/axs03/TranslatorAppIOS" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <div class="tags">
+                    <span class="python-tag">Python</span>
+                    <span class="aws-tag">AWS</span>
+                    <span class="swift-tag">Swift</span>
+                </div>
+                <div class="project-details">
+                    <p>iOS Application utlizing AI for making 
+                        accurate language translations.
+                        <br>Source Code for <b>Communicator.AI</b></p>
+                </div>
+            </div>
+
+            <div class="project-item project-item">
+                <div class="project-title">
+                    <h3>Desktop Financing Application</h3>
+                    <a href="https://github.com/axs03/AccountingCapstone" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <div class="tags">
+                    <span class="python-tag">Python</span>
+                    <span class="java-tag">Java</span>
+                </div>
+                <div class="project-details">
+                    <p>CMPSC Capstone Project -- Accounting Program made using JavaFX and the Seaborn library in Python</p>
+                </div>
+            </div>
+        </div>
+        <div class="top-panel">
+            <p>and more...</p>
+        </div>
     </div>
-    <script src="../static/js/projects.js"></script>
 </body>
 </html>
