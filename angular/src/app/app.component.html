@@ -1,0 +1,26 @@
+<canvas id="background"></canvas>
+<header id="header">
+    <nav class="navbar-links">
+        <button class="custom-button" onclick="scrollToSection('home')"><p>Home</p></button>
+        <button class="custom-button" onclick="scrollToSection('projects')"><p>Projects</p></button>
+        <button class="custom-button" onclick="scrollToSection('contact')"><p>Contact</p></button>
+    </nav>
+    <button class="hamburger-menu" onclick="toggleMenu()">☰</button>
+</header>
+<main class="main">
+  <section id="home" class="container">
+    <app-home></app-home>
+  </section>
+  <section id="projects">
+    <app-projects></app-projects>
+  </section>
+  <section id="experience">
+    <app-experience></app-experience>
+  </section>
+  <section id="contact">
+      <!-- <div class="contact-container"></div> -->
+       <app-contact></app-contact>
+  </section>
+</main>
+
+<!-- <router-outlet /> -->
