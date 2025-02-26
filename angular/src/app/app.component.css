@@ -16,7 +16,7 @@ html {
 .vertical-navbar {
   position: fixed;
   top: 50%;
-  right: 10px;
+  right: 2px;
   transform: translateY(-50%);
   height: fit-content;
   width: fit-content;
@@ -50,12 +50,22 @@ html {
 
 .vertical-navbar .navbar-nav {
   flex-direction: column;
-  width: 100%;
+  width: 30px;
 }
 
 .vertical-navbar .nav-item {
   text-align: center;
   margin-bottom: 0.5rem;
+}
+
+.vertical-navbar .nav-item a.nav-link:hover i {
+  color: white;
+}
+
+.navbar-nav .nav-item.active .fa {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  padding: 5px;
 }
 
 /* Body */
