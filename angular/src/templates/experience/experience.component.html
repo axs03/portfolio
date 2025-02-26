@@ -5,54 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume</title>
-    <link rel="stylesheet" type="text/css" href="../static/css/experience.css"/>
 </head>
 <body>
     <div class="resume-container">
-        
-        <!-- <div class="box">
-            <h2>Skills</h2>
-            <div class="skills">
-                <ul class="skills-list">
-                    <li class="skills-item">Python</li>
-                    <li class="skills-item">SQL</li>
-                    <li class="skills-item">C++</li>
-                    <li class="skills-item">Swift</li>
-                    <li class="skills-item">Firebase</li>
-                    <li class="skills-item">Angular</li>
-                    <li class="skills-item">Flask</li>
-                    <li class="skills-item">Transformers</li>
-                    <li class="skills-item">sk-learn</li>
-                    <li class="skills-item">Streamlit</li>
-                    <li class="skills-item">matplotlib</li>
-                    <li class="skills-item">Seaborn</li>
-                    <li class="skills-item">JavaFX</li>
-                    <li class="skills-item">Git</li>
-                    <li class="skills-item">Docker</li>
-                    <li class="skills-item">Slack</li>
-                    <li class="skills-item">ServiceNow</li>
-                    <li class="skills-item">REST APIs</li>
-                    <li class="skills-item">AWS (SageMaker, EC2, S3)</li>
-                    <li class="skills-item">Azure SQL Databases</li>
-                </ul>
-            </div>
-        </div> -->
+        <div class="top-panel">
+            <h2 class="main-heading">My Projects and Tools</h2>
+            <p>Click on the GitHub icon for the Source Code!</p>
+        </div>
         <div class="box">
             <div class="job-content">
                 <div class="job-left">
-                    <div class="job-company">ADDR LLC,<br>Harrisburg,<br>PA</div>
-                    <div class="job-title">Software Engineer</div>
-                    <div class="job-dates">Dec 2024 - Present</div>
+                    <div class="job-company">Penn State College of Engineering,<br>State College,<br>PA</div>
+                    <div class="job-title">Research Intern, MCREU Scholars Program</div>
+                    
+                    <div class="job-dates">April 2024 - July 2024</div>
                 </div>
                 <div class="job-right">
-                    <p>A technology startup with a focus in developing innovative autonomous drone solutions for various 
-                        real world challenges and use cases. 
-                        <!-- <br>As a team, we at ADDR see drones having potential in life-saving scenarios, 
-                        aiming for the greatest possible impact within disaster response and search and rescue operations. -->
-                        Find out more on <a href="https://addrllc.com">our website</a>. 
-                    </p>
-                    <p>For work experience, I have designed the website and it is maintained by me. I used Three.js for the 3D modelling and JavaScript.
+                    <p>Worked on a research project with my Professor alongside a Doctor from Hershey Medical where our main goal was to develop
+                        an iOS application for delivering accurate conversational translations between doctors and non-English speaking patients.
+                        <br>This involved using Meta's SeamlessM4T-v2 Natural Language Processing model into an iOS application.</p> 
+                        <!-- <div class="job-image">
+                            <img src="../static/icons/phone_disp.png" alt="iOS App" />
+                        </div> -->
+                        <p>We used Python's transformers for the NLP model itself, and successfully containerized the entire environment using Docker for our API deployment. 
+                        <br>Custom API endpoints were made possible using Gunicorn for production with Flask. AWS SageMaker, S3 bucket, and an EC2 instance all 
+                        played big roles in the deployment process. Using TestFlight for our beta testers helped get valuable user feedback. </p>
+                        
                 </div>
+                
             </div>
         </div>
         
@@ -94,18 +74,18 @@
         <div class="box">
             <div class="job-content">
                 <div class="job-left">
-                    <div class="job-company">Penn State College of Engineering,<br>State College,<br>PA</div>
-                    <div class="job-title">Research Intern, MCREU Scholars Program</div>
-                    
-                    <div class="job-dates">April 2024 - July 2024</div>
+                    <div class="job-company">ADDR LLC,<br>Harrisburg,<br>PA</div>
+                    <div class="job-title">Software Engineer</div>
+                    <div class="job-dates">Dec 2024 - Present</div>
                 </div>
                 <div class="job-right">
-                    <p>Worked on a research project with my Professor alongside a Doctor from Hershey Medical where our main goal was to develop
-                        an iOS application for delivering accurate conversational translations between doctors and non-English speaking patients.
-                        <br>This involved using Meta's SeamlessM4T-v2 Natural Language Processing model into an iOS application. We used Python's transformers for 
-                        the NLP model itself, and successfully containerized the entire environment using Docker for our API deployment. 
-                        <br>Custom API endpoints were made possible using Gunicorn for production with Flask. AWS SageMaker, S3 bucket, and an EC2 instance all 
-                        played big roles in the deployment process. Using TestFlight for our beta testers helped get valuable user feedback. </p>
+                    <p>A technology startup with a focus in developing innovative autonomous drone solutions for various 
+                        real world challenges and use cases. 
+                        <!-- <br>As a team, we at ADDR see drones having potential in life-saving scenarios, 
+                        aiming for the greatest possible impact within disaster response and search and rescue operations. -->
+                        Find out more on <a href="https://addrllc.com">our website</a>. 
+                    </p>
+                    <p>For work experience, I have designed the website and it is maintained by me. I used Three.js for the 3D modelling and JavaScript.
                 </div>
             </div>
         </div>
@@ -128,6 +108,12 @@
             </div>
         </div>
     </div>
-        
+    <script>
+        document.querySelectorAll('.box').forEach(box => {
+          box.addEventListener('click', () => {
+            box.classList.toggle('expanded');
+          });
+        });
+      </script>
 </body>
 </html>

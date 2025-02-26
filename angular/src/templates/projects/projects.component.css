@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+.proj-container {
+    min-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: #0e1627;
+    height: 100vh;
+}
+
+.main-heading {
+    color: var(--primary-color);
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.top-panel p {
+    display: flex;
+    justify-content: center;
+    color: rgb(129, 129, 129);
+    margin-bottom: 50px;
+    /* height: 100vh; */
+}
+
+.scrollable-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    width: 95%;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.project-item {
+    flex: 1 1 calc(40% - 50px);
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0px 7px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+    max-width: 30%;
+    gap: 12px;
+    background-color: var(--box-color);
+}
+
+.project-item:hover {
+    box-shadow: 0 0px 12px rgba(0, 3, 49, 0.55);
+}
+
+/* .project-item--reverse {
+    flex-direction: c-reverse;
+} */
+
+.project-title,
+.project-details {
+    flex: 1;
+    margin-top: 10px;
+}
+
+.project-title {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.project-details {
+    text-align: left;
+    color: rgb(122, 122, 122);
+}
+
+.project-title a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    width: fit-content;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.project-title a:hover {
+    color: var(--darker);
+    transform: scale(1.05);
+}
+
+.tags {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.python-tag, .docker-tag, .aws-tag, .swift-tag, .java-tag, .php-tag, .javascript-tag {
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.python-tag {
+    background-color: #ffd620;
+    color: #005ce6;
+}
+
+.docker-tag {
+    background-color: #009dff;
+    color: #ffffff;
+}
+
+.aws-tag {
+    background-color: #1c3552;
+    color: #00ffa2;
+}
+
+.java-tag {
+    background-color: #a85f00;
+    color: #ffd900;
+}
+
+.javascript-tag {
+    background-color: #fdff78;
+    color: #000000;
+}
+
+.swift-tag {
+    background-color: #c78800;
+    color: #ffffff;
+}
+
+.php-tag {
+    background-color: #65008d;
+    color: #b86dff;
+}
+@media (max-width: 768px) {
+    .scrollable-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+    .project-item {
+        flex: 1 1 auto;
+        max-width: 80%;
+    }
+    .main-heading {
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+    .top-panel p {
+        font-size: small;
+        margin-bottom: 30px;
+    }
+    .project-title {
+        font-size: 1.2rem;
+    }
+    .project-details {
+        font-size: 0.9rem;
+    }
+}
