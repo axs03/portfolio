@@ -103,8 +103,8 @@ main {
   width: 100%;
 }
 
-section {
-  height: fit-content;
+#home {
+  height: 100vh;
 }
 
 /* Responsive styling */
@@ -136,12 +136,7 @@ section {
   
   .hamburger-menu {
     display: block;
-    height: 15px;
     margin: 0 auto;
-  }
-
-  header.expanded .hamburger-menu i {
-    transform: rotate(180deg);
   }
   
   .custom-button {
