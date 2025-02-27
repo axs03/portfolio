@@ -127,6 +127,10 @@ button.download-resume:active {
 }
 
 @media (max-width: 768px) {
+    main {
+        min-height: fit-content;
+    }
+
     .container {
         margin-top: 30px;
     }

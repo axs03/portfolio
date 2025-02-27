@@ -11,8 +11,11 @@ export class ExperienceComponent implements AfterViewInit {
 
   ngAfterViewInit(): void {
     this.boxes.forEach((box: ElementRef) => {
-      box.nativeElement.addEventListener('click', () => {
-        box.nativeElement.classList.toggle('expanded');
+      box.nativeElement.addEventListener('mouseover', () => {
+        box.nativeElement.classList.add('expanded');
+      });
+      box.nativeElement.addEventListener('mouseout', () => {
+        box.nativeElement.classList.remove('expanded');
       });
     });
   }

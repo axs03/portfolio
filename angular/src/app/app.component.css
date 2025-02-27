@@ -109,36 +109,6 @@ main {
 
 /* Responsive styling */
 @media (max-width: 768px) {
-  header {
-    position: relative;
-    transition: height 0.5s ease;
-    height: 30px;
-  }
-  
-  header.expanded {
-    height: 160px;
-  }
-  
-  .navbar-links {
-    flex-wrap: wrap;
-    gap: 10px;
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: opacity 1s ease, max-height 0.5s ease;
-  }
-  
-  header.expanded .navbar-links {
-    opacity: 1;
-    max-height: 200px;
-    flex-direction: row;
-  }
-  
-  .hamburger-menu {
-    display: block;
-    margin: 0 auto;
-  }
-  
   .custom-button {
     text-align: center;
     width: fit-content;

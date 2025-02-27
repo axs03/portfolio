@@ -145,6 +145,6 @@ li {
 
     .job-content {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
 }
