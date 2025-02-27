@@ -5,6 +5,11 @@ Color Selector : https://htmlcolorcodes.com/ <br>
 
 
 ## Making Local Changes
-Run following command in terminal
-```php
-php -S localhost:8080
+Run following to start the npm server
+```shell
+ng serve
+```
+## Deploying to Production
+``` shell
+ng build --configuration production
+```

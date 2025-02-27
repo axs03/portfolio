@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit, ElementRef, ViewChildren, QueryList } from '@angular/core';
 
 @Component({
   selector: 'app-experience',
@@ -6,6 +6,14 @@ import { Component } from '@angular/core';
   templateUrl: './experience.component.html',
   styleUrl: './experience.component.css'
 })
-export class ExperienceComponent {
+export class ExperienceComponent implements AfterViewInit {
+  @ViewChildren('box') boxes!: QueryList<ElementRef>;
 
+  ngAfterViewInit(): void {
+    this.boxes.forEach((box: ElementRef) => {
+      box.nativeElement.addEventListener('click', () => {
+        box.nativeElement.classList.toggle('expanded');
+      });
+    });
+  }
 }

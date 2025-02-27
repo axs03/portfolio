@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-
+  downloadResume(): void {
+      window.open('./files/Aman_Sahu_Resume.pdf', '_blank');
+  }
 }

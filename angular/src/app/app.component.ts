@@ -16,7 +16,7 @@ import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
 export class AppComponent {
   title = 'Portfolio Home';
   isMenuCollapsed = true;
-  activeSection: string = 'home';
+  activeSection: string = '';
 
   constructor(@Inject(DOCUMENT) private document: Document) {}
 
@@ -25,10 +25,11 @@ export class AppComponent {
     const observerOptions = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.5 // 60% of the section in view
+      threshold: 0.5
     };
     
-    const observer = new IntersectionObserver((entries) => {
+    if (typeof IntersectionObserver !== 'undefined') {
+      const observer = new IntersectionObserver((entries) => {
       let maxRatio = 0;
       let activeId = this.activeSection;
       
@@ -41,7 +42,7 @@ export class AppComponent {
       
       this.activeSection = activeId;
     }, observerOptions);
-    
-    sections.forEach(section => observer.observe(section));
+      sections.forEach(section => observer.observe(section));
+    }
   }
 }
