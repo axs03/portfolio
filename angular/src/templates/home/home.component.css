@@ -128,15 +128,26 @@ button.download-resume:active {
 
 @media (max-width: 768px) {
     main {
-        min-height: fit-content;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .container {
-        margin-top: 30px;
+        margin-top: 0;
+        padding: 6px;
+        padding-right: 70px;
+        gap: 20px;
     }
 
     h1 {
+        font-size: 2.5em;
+    }
+
+    #name {
         font-size: 3em;
+        padding: 0;
     }
 
     .bottom {
@@ -144,6 +155,6 @@ button.download-resume:active {
     }
 
     #hint-above {
-        font-size: 1em;
+        font-size: 0.9em;
     }
 }
