@@ -6,16 +6,28 @@ import { Component, AfterViewInit, ElementRef, ViewChildren, QueryList } from '@
   templateUrl: './experience.component.html',
   styleUrl: './experience.component.css'
 })
+// export class ExperienceComponent implements AfterViewInit {
+//   @ViewChildren('box') boxes!: QueryList<ElementRef>;
+
+//   ngAfterViewInit(): void {
+//     this.boxes.forEach((box: ElementRef) => {
+//       box.nativeElement.addEventListener('mouseover', () => {
+//         box.nativeElement.classList.add('expanded');
+//       });
+//       box.nativeElement.addEventListener('mouseout', () => {
+//         box.nativeElement.classList.remove('expanded');
+//       });
+//     });
+//   }
+// }
 export class ExperienceComponent implements AfterViewInit {
   @ViewChildren('box') boxes!: QueryList<ElementRef>;
 
   ngAfterViewInit(): void {
+    // Replace mouseover/mouseout with a click listener
     this.boxes.forEach((box: ElementRef) => {
-      box.nativeElement.addEventListener('mouseover', () => {
-        box.nativeElement.classList.add('expanded');
-      });
-      box.nativeElement.addEventListener('mouseout', () => {
-        box.nativeElement.classList.remove('expanded');
+      box.nativeElement.addEventListener('click', () => {
+        box.nativeElement.classList.toggle('expanded');
       });
     });
   }
