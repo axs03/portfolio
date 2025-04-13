@@ -1,30 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* centers content vertically */
+    align-items: flex-start;    /* keeps content left-aligned */
+    min-height: 100vh;
+    padding: 0 50px;            /* extra horizontal space for desktop */
     font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
     background-color: transparent;
     color: #333;
     font-size: 1.2em;
-    justify-content: left;
-    align-items: left;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 100%;
     gap: 30px;
+    width: 100%;
 }
 
-.container button {
-    width: fit-content;
-    margin-top: 20px;
-}
-
-.top {
+.top,
+.bottom {
     text-align: left;
 }
 
@@ -32,19 +29,15 @@ main {
     font-size: 6em;
     font-weight: 700;
     color: var(--primary-color);
-    animation: fadeInFlicker 2s ease forwards;
-    text-shadow: 0 0 10px var(--primary-color);
-}
-
-.bottom {
-    text-align: left;
+    margin: 0;
 }
 
 #hint-above {
     margin-top: 20px;
-    color: #f7f7f7;
-    display: flex;
-    font-size: 1em;
+    color: black;
+    font-size: 1.5em;
+    opacity: 0;
+    animation: fadeIn 2s ease forwards 2s;
 }
 
 h1 {
@@ -52,39 +45,52 @@ h1 {
     font-size: 6em;
     font-weight: 700;
     color: white;
+    -webkit-text-stroke: 0px black;
+    text-shadow: 2.5px 1.5px 0 #000, 
+                -1.5px -1.5px 0 #000,  
+                 1.5px -1.5px 0 #000,
+                -1.5px 1.5px 0 #000;
 }
 
+#intro, #name {
+    opacity: 0; /* Ensures it's hidden before animation */
+    animation: fadeIn 2s ease forwards;
+}
+
+
 #caption {
+    opacity: 0;
     line-height: 1.6;
     margin: 10px 0;
     color: grey;
     font-size: 2em;
+    animation: fadeIn 2s ease forwards 1s;
 }
 
 button.download-resume {
-    margin: 10px;
+    margin: 10px 0;
     padding: 15px 30px;
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
     background-size: 200% auto;
     color: black;
-    border-radius: 10px;
-    display: block;
-    border: 0px;
+    display: inline-block;
+    border: 0;
     font-weight: 600;
     font-size: small;
-    box-shadow: 0px 0px 14px -7px #000000;
-    background-image: linear-gradient(60deg, var(--primary-color) 0%, var(--darker)  51%, var(--primary-color)  100%);
+    box-shadow: 0px 0px 14px -7px #000;
+    background-image: linear-gradient(60deg, var(--primary-color) 0%, white 51%, var(--primary-color) 100%);
     cursor: pointer;
     touch-action: manipulation;
-    animation: fadeInFlicker 2s ease forwards;
+    opacity: 0;
+    border-radius: var(--border-radius);
+    animation: fadeIn 2s ease forwards 3s;
 }
 
 button.download-resume:hover {
     background-position: right center;
-    /* change the direction of the change here */
-    color: #fff;
+    color: grey;
     text-decoration: none;
 }
 
@@ -92,69 +98,39 @@ button.download-resume:active {
     transform: scale(0.95);
 }
 
-
-@keyframes fadeInFlicker {
+/* Fade-in keyframes */
+@keyframes fadeIn {
     0% {
         opacity: 0;
-    }
-    10% {
-        opacity: 0.4;
-    }
-    20% {
-        opacity: 0.3;
-    }
-    30% {
-        opacity: 0.5;
-    }
-    40% {
-        opacity: 0.6;
-    }
-    50% {
-        opacity: 1;
-    }
-    60% {
-        opacity: 0.8;
-    }
-    70% {
-        opacity: 0.9;
-    }
-    80% {
-        opacity: 1;
+        transform: translateY(20px);
     }
     100% {
         opacity: 1;
+        transform: translateY(0);
     }
 }
 
+
 @media (max-width: 768px) {
     main {
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        padding: 0 20px;   /* reduced horizontal margins for mobile */
     }
-
     .container {
-        margin-top: 0;
-        padding: 6px;
-        padding-right: 70px;
         gap: 20px;
     }
-
+    #name,
     h1 {
-        font-size: 2.5em;
-    }
-
-    #name {
         font-size: 3em;
-        padding: 0;
     }
-
-    .bottom {
-        font-size: 0.8em;
-    }
-
     #hint-above {
-        font-size: 0.9em;
+        font-size: 1.2em;
+    }
+    #caption {
+        font-size: 1.5em;
+    }
+    button.download-resume {
+        padding: 12px 20px;
+        font-size: small;
+        margin: 10px 0;
     }
 }

@@ -36,9 +36,15 @@
 }
 
 :root {
-    --primary-color: #fc7d7d;
-    --darker: #FF6B6B ;
-    --secondary-color: #101e3d;
+    --primary-color: #A5C9CA;
+    --darker: #2E4052;
+    --home-bg: #2E4052;
+    --proj-bg: #FFFAED;
+    --exp-bg: #e3e0d7;
+    --contact-bg: #A5C9CA;
     --box-color: rgba(5, 6, 10, 0.705);
+
+    --border-radius: 8px;
+    --headings-weight: 1000;
 }
 
