@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('../../styles.css');
 
 .resume-container {
     position: relative;
@@ -31,10 +32,10 @@
 }
 
 .main-heading {
-    font-weight: 700;
     font-size: 4rem;
     color: var(--darker);
     text-align: left;
+    font-weight: var(--headings-weight);
     margin: 0 0 1.5rem 2rem;
     font-family: 'Roboto', sans-serif;
     text-shadow: 1.0px 1.0px 0 #000, 
@@ -121,12 +122,8 @@
 }
 
 .job-company {
-    font-style: italic;
-    color: white;
-    text-shadow: 0.9px 0.9px 0 #000, 
-                 -0.9px -0.9px 0 #000,  
-                  0.9px -0.9px 0 #000,
-                 -0.9px 0.9px 0 #000;
+    font-weight: 100;
+    color: black;
 }
 
 .job-right a {
@@ -184,6 +181,10 @@ li {
         left: -25px;
         width: 10px;
         height: 10px;
+    }
+
+    .main-heading {
+        font-size: 3em;
     }
     
     .box {

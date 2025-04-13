@@ -44,8 +44,8 @@
 .project-item {
     display: flex;
     flex-direction: column;
-    background: white;
-    border: 1px solid #e8e8e8;
+    background: transparent;
+    border: 1px solid #000000;
     /* border-radius: var(--border-radius); */
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -56,16 +56,16 @@
 }
 
 .project-item:hover {
-    transform: translateY(-4px);
+    transform: scale(1.002);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
 .project-title {
     padding: 1.25rem 1.5rem;
     margin: 0;
-    color: white;
-    background: rgb(194, 194, 194);
-    border-bottom: 1px solid #e8e8e8;
+    color: black;
+    background: transparent;
+    border-bottom: 0.5px solid black;
     transition: all 1s ease;
 }
 
@@ -160,7 +160,7 @@
     
     .main-heading {
         margin-left: 1rem;
-        font-size: 1.75rem;
+        font-size: 3rem;
     }
     
     .top-panel p {
