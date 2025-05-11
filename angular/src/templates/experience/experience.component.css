@@ -9,7 +9,7 @@
     width: 100%;
     background-color: var(--exp-bg);
     padding: 30px 50px 30px 60px;
-    min-height: 100vh;
+    min-height: 100dvh;
 }
 
 /* Vertical timeline bar */
@@ -33,7 +33,7 @@
 
 .main-heading {
     font-size: 4rem;
-    color: var(--darker);
+    color: var(--primary-color);
     text-align: left;
     font-weight: var(--headings-weight);
     margin: 0 0 1.5rem 2rem;
@@ -118,7 +118,7 @@
 
 .job-title {
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--darker);
 }
 
 .job-company {

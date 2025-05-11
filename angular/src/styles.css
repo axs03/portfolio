@@ -17,7 +17,7 @@
 
 * {
     scrollbar-width: none;
-    scrollbar-color: var(--primary-color) #ffffff00;
+    scrollbar-color: var(--primary-color) white;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -26,7 +26,7 @@
 }
 
 *::-webkit-scrollbar-track {
-    background: rgba(8, 18, 48, 0);
+    background: rgb(255, 255, 255);
     backdrop-filter: blur(2px);
 }
 
@@ -36,12 +36,12 @@
 }
 
 :root {
-    --primary-color: #A5C9CA;
-    --darker: #2E4052;
-    --home-bg: #2E4052;
-    --proj-bg: #FFFAED;
+    --primary-color: #608BC1;
+    --darker: #133E87;
+    --home-bg: #121212;
+    --proj-bg: rgb(218, 214, 201);
     --exp-bg: #e3e0d7;
-    --contact-bg: #A5C9CA;
+    --contact-bg: #F3F3E0;
     --box-color: rgba(5, 6, 10, 0.705);
 
     --border-radius: 8px;

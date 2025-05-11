@@ -55,7 +55,7 @@ html {
 
 .vertical-navbar .nav-item {
   text-align: center;
-  color: black;
+  color: rgb(136, 136, 136);
   margin-bottom: 0.5rem;
 }
 
@@ -64,11 +64,12 @@ html {
 }
 
 .vertical-navbar .nav-item a.nav-link:hover i {
-  color: rgb(14, 14, 14);
+  color: rgb(255, 255, 255);
 }
 
 .navbar-nav .nav-item.active .fa {
   background-color: var(--primary-color);
+  color: white;
   border-radius: 10px;
   padding: 5px;
 }
