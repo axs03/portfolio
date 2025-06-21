@@ -60,11 +60,11 @@ html {
 }
 
 .vertical-navbar .nav-item a.nav-link i {
-  color: rgb(132, 132, 132);
+  color: rgb(255, 255, 255);
 }
 
 .vertical-navbar .nav-item a.nav-link:hover i {
-  color: rgb(255, 255, 255);
+  color: rgb(122, 122, 122);
 }
 
 .navbar-nav .nav-item.active .fa {

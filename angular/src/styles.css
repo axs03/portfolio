@@ -36,11 +36,11 @@
 }
 
 :root {
-    --primary-color: #608BC1;
-    --darker: #133E87;
-    --home-bg: #121212;
+    --primary-color: #599692;
+    --darker: #467370;
+    --home-bg: #11172a;
     --proj-bg: rgb(218, 214, 201);
-    --exp-bg: #e3e0d7;
+    --exp-bg: rgb(193, 189, 177);
     --contact-bg: #F3F3E0;
     --box-color: rgba(5, 6, 10, 0.705);
 
