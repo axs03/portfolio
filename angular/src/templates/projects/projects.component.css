@@ -55,6 +55,16 @@
     min-width: fit-content;
 }
 
+/* Project description paragraph */
+.project-item > p {
+    padding: 1rem 1.5rem;
+    margin: 0 0 1.5rem;
+    font-size: 0.875rem;
+    color: #444;
+    line-height: 1.6;
+    text-align: left;
+}
+
 .project-item:hover {
     transform: scale(1.002);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
@@ -116,7 +126,7 @@
     flex-wrap: wrap;
     gap: 0.5rem;
     padding: 1rem 1.5rem;
-    border-top: 1px solid #f0f0f0;
+    border-top: none;
     margin-top: auto;
 }
 

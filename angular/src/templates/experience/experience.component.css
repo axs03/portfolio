@@ -140,6 +140,24 @@
     color: black;
 }
 
+/* PDF viewer styling */
+.job-right object {
+    width: 100%;
+    /* you can use vh for a more fluid height if you like: height: 50vh; */
+    height: 50vh;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.job-right object p {
+    padding: 1rem;
+    font-size: 0.875rem;
+    color: #555;
+    text-align: center;
+}
+
 .job-dates {
     color: #888;
     font-size: 0.9em;
